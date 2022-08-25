@@ -1,16 +1,18 @@
 import logo from './logo.svg';
+import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import HeroBanner from './Components/HeroBanner';
-import HomePage from './Components/HomePage';
 
 function App() {
-    return (
-        <div >
-            {/* TEST */}
-            <HomePage />
-        </div>
-    );
+  return (
+    <div className="container">
+      <Header />
+      <HeroBanner />
+      
+      <Footer/>
+    </div>
+  );
 }
 
 export default App;
