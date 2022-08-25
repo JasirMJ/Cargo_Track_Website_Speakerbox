@@ -47,6 +47,7 @@ function HeroBanner() {
             }
             banner = banner + 1;
             setSlider(banner);
+            
         }
         , 1000);
 
