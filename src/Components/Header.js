@@ -1,28 +1,15 @@
 import React from 'react'
-import logo from "../assets/images/samplelogo.png";
+import logo from "../assets/images/logo/logo.png";
 
 function Header() {
     return (
-        // <div className="header">
-        //     <div className="flex-row-1"></div>
-        //     <div className="header-logo">
-        //         <img src={logo} alt="logo" className='header-logo-img'/>
-        //     </div>
-        //     <div className="header-nav">
-        //         <a >Home</a>
-        //         <a >About Us</a>
-        //         <a >Services</a>
-        //         <a >Gallery</a>
-        //     </div>
-        //     <div className="flex-row-1"></div>
-        // </div>
         <header id="header" data-menu-padding={28} data-sticky-menu-padding={8}>
             <div id="header-wrap">
                 <div className="container">
                     <div className="header-row">
                         <div id="logo">
-                            <a href="index.html" className="standard-logo"><img src="demos/medical/images/logo-medical.png" alt="Canvas Logo" /></a>
-                            <a href="index.html" className="retina-logo"><img src="demos/medical/images/logo-medical%402x.png" alt="Canvas Logo" /></a>
+                            <a href="index.html" className="standard-logo logo_img"><img src={logo} alt="Canvas Logo" /></a>
+                            <a href="index.html" className="retina-logo logo_img"><img src={logo} alt="Canvas Logo" /></a>
                         </div>
                         <div id="primary-menu-trigger">
                             <svg className="svg-trigger" viewBox="0 0 100 100">
@@ -42,12 +29,12 @@ function Header() {
                                     <div>About Us</div>
                                 </a></li>
                                 <li className="menu-item"><a className="menu-link" href="demo-medical-departments.html">
-                                    <div>Departments</div>
+                                    <div>Services</div>
                                 </a></li>
                                 <li className="menu-item"><a className="menu-link" href="demo-medical-appointment.html">
-                                    <div>Appointment</div>
+                                    <div>Gallery</div>
                                 </a></li>
-                                <li className="menu-item"><a className="menu-link" href="demo-medical-doctors.html">
+                                {/* <li className="menu-item"><a className="menu-link" href="demo-medical-doctors.html">
                                     <div>Doctors</div>
                                 </a>
                                     <ul className="sub-menu-container">
@@ -67,7 +54,7 @@ function Header() {
                                 </a></li>
                                 <li className="menu-item"><a className="menu-link" href="demo-medical-contact.html">
                                     <div>Contact</div>
-                                </a></li>
+                                </a></li> */}
                             </ul>
                         </nav>
                     </div>
