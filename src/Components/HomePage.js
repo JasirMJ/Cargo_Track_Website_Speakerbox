@@ -8,6 +8,7 @@ import Services from './Services'
 import Topbar from './Topbar'
 import TwoColumOne from './TwoColumOne'
 import goodluck_img from '../assets/images/misc/footer card.png'
+import whatsapp_icon from '../assets/images/icons/whatsapp.png'
 
 
 function HomePage() {
@@ -160,7 +161,9 @@ function HomePage() {
                 </section>
                 <Footer />
 
-                <div className="position-fixed  bg-primary bottom-0 end-0 whatsapp-icon" >123</div>
+                <div className="position-fixed  bottom-0 end-0 whatsapp-icon" >
+                    <img src={whatsapp_icon} alt="whatsapp" />
+                </div>
 
             </div >
 
