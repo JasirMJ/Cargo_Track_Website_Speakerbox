@@ -7,6 +7,7 @@ import RibbonBannerMembership from './RibbonBannerMembership'
 import Services from './Services'
 import Topbar from './Topbar'
 import TwoColumOne from './TwoColumOne'
+import goodluck_img from '../assets/images/misc/footer card.png'
 
 
 function HomePage() {
@@ -18,97 +19,102 @@ function HomePage() {
             <div>
                 <Topbar />
                 <Header />
-
-
-                {/* 
-                <section id="slider" className="slider-element swiper_wrapper min-vh-50 min-vh-md-100" data-animation="fade" data-loop="true" data-autoplay={5000}>
-                    <div className="slider-inner">
-                        <div className="swiper-container swiper-parent">
-                            <div className="swiper-wrapper">
-                                <div className="swiper-slide">
-                                    <div className="container">
-                                        <div className="slider-caption slider-caption-right" style={{ maxWidth: 700 }}>
-                                            <div>
-                                                <h2 data-animate="flipInX">Team of Experts<span>.</span></h2>
-                                                <p className="d-none d-sm-block" data-animate="flipInX" data-delay={500}>Our Team of
-                                                    Doctors are specialized in Various Disciplines to make sure you get the Best
-                                                    Treatment.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide-bg" style={{ backgroundImage: 'url("demos/medical/images/slider/1.jpg")' }} />
-                                </div>
-                                <div className="swiper-slide">
-                                    <div className="container">
-                                        <div className="slider-caption">
-                                            <div>
-                                                <h2 data-animate="zoomIn">Heart<span>Beat</span>.</h2>
-                                                <p className="d-none d-sm-block" data-animate="zoomIn" data-delay={500}>Care for
-                                                    your Loved Ones from the Experts in the Medical &amp; Hospitality Industry.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="swiper-slide-bg" style={{ backgroundImage: 'url("demos/medical/images/slider/2.jpg")' }} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> 
-                */}
-
                 <Caurousel />
 
                 <section id="content">
-                    <div className="content-wrap">
+                    <div className="content-wrap" style={{ overflow: 'visible' }}>
                         <div className="container clearfix">
-                            <div className="row col-mb-50 mb-0 xbg-primary" >
-                                <div className='col-sm-6 col-lg-8 home-contact' style={{
-                                    // backgroundColor: 'red',
+                            <div className="row col-mb-50 mb-0 xbg-primary" style={{
+                                marginTop: '-364px',
+                                color: 'white',
+                                zIndex: '10000',
+                            }} >
+                                <div className='col-sm-6 col-lg-8 home-contact contact-details' style={{
+                                    height: 'auto',
+                                    margin: '0px -14px 6px -24px;',
                                 }} >
-                                    <div>
-                                        <div>icon</div>
-                                        <div>
-                                            <span>Mail us</span>
-                                            <span>info@cargotrack.co</span>
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            backgroundColor: 'red',
+                                            margin: '-12px',
+                                            height: "80px",
+                                            width: '400px',
+                                        }}
+                                    >
+                                        <div className='bgsecondary d-flex align-items-center flex-grow-1'>
+                                            <div>
+                                                <i className="fa fa-envelope p-2" aria-hidden="true"></i>
+                                            </div>
+                                            <div className='p-2'>
+                                                <span>Mail us</span><br />
+                                                <span>info@cargotrack.co</span>
+                                            </div>
+                                        </div>
+                                        <div className='d-flex align-items-center flex-grow-1'
+                                            style={{
+                                                backgroundColor: 'rgb(2,112,155)',
+                                            }}
+                                        >
+                                            <div>
+                                                <i className="fa fa-phone p-2" aria-hidden="true"></i>
+                                            </div>
+                                            <div className='p-2'>
+                                                <span>Call us</span><br />
+                                                <span>+966569177864</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div>icon</div>
-                                        <div>
-                                            <span>Call us</span>
-                                            <span>+966569177864</span>
-                                        </div>
-                                    </div>
-
-
-
                                 </div>
                                 <div className='col-sm-6 col-lg-4 '
                                     style={{
-                                        backgroundColor: 'green'
+                                        backgroundColor: 'rgb(48,150,190,0.8)',
+                                        borderRadius: '20px 20px 20px 20px',
+                                        padding: '30px'
                                     }}
                                 >
-                                    <div>
-                                        <div>Get a Free Moving Quote</div>
-                                        <div>Get a Free Moving Quote</div>
-                                        <div>Get a Free Moving Quote</div>
-                                        <div>Get a Free Moving Quote</div>
-                                        <div>Get a Free Moving Quote</div>
+                                    <div className='d-flex justify-content-center align-items-center col-12 '>Get a Free Moving Quote</div>
 
+                                    <div className="input-group mb-3  mt-2">
+
+                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                    </div>
+                                    <div className="input-group mb-3">
+
+                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                                     </div>
 
+
+                                    <div className="input-group mb-3">
+                                        <input type="text" className="form-control " style={{ marginRight: '5px', borderRadius: '5px' }} placeholder="Username" aria-label="Username" />
+
+                                        <input type="text" className="form-control" style={{ marginLeft: '5px', borderRadius: '5px' }} placeholder="Server" aria-label="Server" />
+                                    </div>
+
+                                    <div className="input-group mb-3">
+
+                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                    </div>
+
+                                    <div className="input-group mb-3">
+                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" style={{ marginRight: '5px', borderRadius: '5px' }} />
+
+                                        {/* <input type="text" className="form-control" placeholder="Server" aria-label="Server" /> */}
+                                        <button className='btn btnprimary' placeholder=''
+                                            style={{ width: '50%', height: "40px", marginLeft: '5px', borderRadius: '5px' }}
+                                        >Get a Quote</button>
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* <section id="content">
-                    <div className="content-wrap"> */}
                 <TwoColumOne />
+
+                <RibbonBannerMembership />
 
 
                 <RibbonBanner />
@@ -116,116 +122,52 @@ function HomePage() {
 
 
 
-                <Services type="" />
+                <Services type="" name="Our Services" see_all_btn={false} />
 
 
                 <RibbonBannerMembership />
 
+                <Services type="customer" name="Customer Feedback" see_all_btn={false} />
 
-                {/* 
-                        <div className="container clearfix">
-                            <div className="heading-block center border-bottom-0">
-                                <h3>Meet our Team of Specialists<span>.</span></h3>
-                                <span>We make sure that your Life are in Good Hands.</span>
-                            </div>
-                            <div id="oc-team" className="owl-carousel team-carousel carousel-widget" data-margin={30} data-nav="true" data-pagi="true" data-items-xs={1} data-items-sm={2} data-items-lg={3} data-items-xl={4}>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. John Doe</h4><span>Cardiologist</span>
-                                        </div>
-                                    </div>
+                <section id="content">
+                    <div className="content-wrap" style={{
+                        overflow: 'visible',
+                        zIndex: '1',
+                        padding: '0px',
+                        marginBottom: '-50px',
+
+
+                    }}>
+                        <div className="container clearfix d-flex justify-content-center mt-5">
+                            <div className="row xcol-mb-50 mb-0 footer-banner"  >
+                                <div
+                                    className='footer-banner-text'
+
+                                >
+                                    <div className='heading-small'>Do you have a requirement ?</div>
+                                    <div className='footer-banner-desc'>We provide better freight & service in the kingodom of Saudi Arabia with our expertise</div>
+                                    <button className='btn btnprimary' placeholder=''
+                                        style={{ width: 'auto', height: "35px", borderRadius: '5px', marginTop: '10px' }}
+                                    >Get a Quote</button>
                                 </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Bryan Mcguire</h4><span>Orthopedist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Mary Jane</h4><span>Neurologist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Silvia Bush</h4><span>Dentist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Hugh Baldwin</h4><span>Cardiologist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Erika Todd</h4><span>Neurologist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Randy Adams</h4><span>Dentist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team">
-                                    <div className="team-image">
-                                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Dr. John Doe" />
-                                    </div>
-                                    <div className="team-desc">
-                                        <div className="team-title">
-                                            <h4>Dr. Alan Freeman</h4><span>Eye Specialist</span>
-                                        </div>
-                                    </div>
-                                </div>
+
+
+                                <img src={goodluck_img} alt="goodluck" className='footer-banner-img' />
+
                             </div>
                         </div>
-                         */}
-
-
-                {/* </div>
-                </section> */}
-
-                <Services type="customer" />
-
-
+                    </div>
+                </section>
                 <Footer />
-            </div>
+
+                <div className="position-fixed  bg-primary bottom-0 end-0 whatsapp-icon" >123</div>
+
+            </div >
+
 
 
             {/* end */}
-        </div>
+        </div >
     )
 }
 

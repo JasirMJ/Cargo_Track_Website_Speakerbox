@@ -6,6 +6,15 @@
     --primary-color-light: #b8dde9;
     --secondary-color: #00aeef;
     --text-color: #fff;
+
+}
+
+.bgwhite {
+    background-color: #fff;
+}
+
+.colorwhite {
+    color: #fff;
 }
 
 .btnprimary {
@@ -30,7 +39,7 @@
     background-color: var(--primary-color-light);
 }
 
-.bg-secondary {
+.bgsecondary {
     background-color: var(--secondary-color);
 }
 
@@ -52,6 +61,22 @@
 
 .service-card {
     border-radius: 10px;
+}
+
+.txt-field {
+    margin: 10px 0px 10px 0px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.txt-field-300 {
+    width: 360px;
+}
+
+.txt-field-150 {
+    width: 150px;
 }
 
 

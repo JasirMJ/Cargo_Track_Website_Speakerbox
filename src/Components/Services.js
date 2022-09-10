@@ -3,7 +3,7 @@ import p1 from '../assets/profile/Rectangle 171.png'
 import p2 from '../assets/profile/Rectangle 171-1.png'
 import p3 from '../assets/profile/Rectangle 171-2.png'
 
-function Services({ type }) {
+function Services({ type, name, see_all_btn }) {
     const [services, setServices] = React.useState([
         {
             "image": 1,
@@ -74,8 +74,9 @@ function Services({ type }) {
                         // flexDirection: 'column',
                     }}
                 >
-                    <h1>Our Services</h1>
-                    <button className="btn-see-all ">See all </button>
+                    <h1>{name}</h1>
+                    {see_all_btn && <button className="btn-see-all ">See all </button>}
+
                 </div>
             </section>
             <section id="content">

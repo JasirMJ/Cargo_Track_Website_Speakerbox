@@ -1,0 +1,148 @@
+.carousel-text {
+    text-align: start;
+    padding: 0px 0px 0px 90px;
+    z-index: 500;
+    height: 100vh;
+}
+
+.carousel-image {
+    height: 100vh;
+}
+
+.heading-large {
+    font-size: 3.5rem;
+    font-weight: 600;
+
+}
+
+.heading-medium {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.heading-small {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.normal-text-large {
+    font-size: 1rem;
+}
+
+.normal-text-medium {
+    font-size: 0.8rem;
+}
+
+.normal-text-small {
+    font-size: 0.6rem;
+}
+
+
+.footer-banner-img {
+    width: 360px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.footer-banner-text {
+    width: 65%;
+}
+
+.footer-banner {
+    margin-bottom: -10px;
+    width: 80%;
+    border-radius: 20px;
+    position: relative;
+    height: 180px;
+    padding: 20px;
+    background-color: #01afef;
+}
+
+.whatsapp-icon {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    z-index: 1111;
+}
+
+
+
+
+/* css when device smaller than 400px width */
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+
+
+    }
+
+    .carousel-text {
+        height: auto !important;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .carousel-image {
+        height: auto;
+        /* display: block; */
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
+    }
+
+    .banner_font {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .banner-text {
+        margin-top: 35px;
+        height: 20vh !important;
+    }
+
+    .cpb-0 {
+        padding-bottom: 0px !important;
+    }
+
+    .banner-area {
+        height: 90vh;
+    }
+
+    .contact-details {
+        display: none;
+    }
+
+    .footer-banner-img {
+        width: 230px;
+        position: absolute;
+        right: -55px;
+        bottom: 0px;
+    }
+
+    .heading-small {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .heading-medium {
+        font-size: 2rem;
+        font-weight: 600;
+
+    }
+
+    .footer-banner-desc {
+        display: none;
+    }
+
+    .footer-banner {
+        height: 120px;
+    }
+
+    .whatsapp-icon {
+        display: none;
+    }
+
+
+
+}
