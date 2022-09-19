@@ -9,6 +9,7 @@ import Topbar from './Topbar'
 import TwoColumOne from './TwoColumOne'
 import goodluck_img from '../assets/images/misc/footer card.png'
 import whatsapp_icon from '../assets/images/icons/whatsapp.png'
+import QuestionBanner from './QuestionBanner'
 
 
 function HomePage() {
@@ -115,7 +116,9 @@ function HomePage() {
 
                 <TwoColumOne />
 
-                <RibbonBannerMembership />
+                <QuestionBanner />
+
+                {/* <RibbonBannerMembership /> */}
 
 
                 <RibbonBanner />

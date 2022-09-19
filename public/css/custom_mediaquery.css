@@ -68,6 +68,16 @@
     cursor: pointer;
 }
 
+.question_banner {
+    width: 90%;
+    min-height: 400px;
+    font-size: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0px 0px 100px;
+}
+
 
 
 
@@ -143,6 +153,17 @@
     .whatsapp-icon {
         display: none;
     }
+
+    .question_banner {
+        width: 100%;
+        min-height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 140px 0px 0px 30px;
+
+    }
+
 
 
 
