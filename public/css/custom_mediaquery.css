@@ -78,7 +78,13 @@
     padding: 100px 0px 0px 100px;
 }
 
+.gallery-mobileview {
+    display: none;
+}
 
+.gallery-webview {
+    display: block;
+}
 
 
 /* css when device smaller than 400px width */
@@ -164,7 +170,13 @@
 
     }
 
+    .gallery-webview {
+        display: none;
+    }
 
+    .gallery-mobileview {
+        display: block;
+    }
 
 
 }

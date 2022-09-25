@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/images/logo/logo.png";
+import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom'
 
 function Header() {
     return (
@@ -22,17 +23,26 @@ function Header() {
                         </div>
                         <nav className="primary-menu style-3 menu-spacing-margin">
                             <ul className="menu-container">
-                                <li className="menu-item xcurrent"><a className="menu-link" href="demo-medical.html">
-                                    <div>Home</div>
+                                <li className="menu-item xcurrent"><a className="menu-link" >
+                                    <Link to="/home">
+                                        <div>Home</div>
+                                    </Link>
                                 </a></li>
-                                <li className="menu-item "><a className="menu-link" href="demo-medical-about-us.html">
-                                    <div>About Us</div>
+                                <li className="menu-item "><a className="menu-link" >
+                                    <Link to="/about">
+                                        <div>About Us</div>
+                                    </Link>
                                 </a></li>
-                                <li className="menu-item"><a className="menu-link" href="demo-medical-departments.html">
-                                    <div>Services</div>
+                                <li className="menu-item"><a className="menu-link" >
+                                    <Link to="/services">
+                                        <div>Services</div>
+
+                                    </Link>
                                 </a></li>
-                                <li className="menu-item"><a className="menu-link" href="demo-medical-appointment.html">
-                                    <div>Gallery</div>
+                                <li className="menu-item"><a className="menu-link" >
+                                    <Link to="/gallery">
+                                        <div>Gallery</div>
+                                    </Link>
                                 </a></li>
                                 {/* <li className="menu-item"><a className="menu-link" href="demo-medical-doctors.html">
                                     <div>Doctors</div>

@@ -7,22 +7,21 @@ import RibbonBannerMembership from './RibbonBannerMembership'
 import Services from './Services'
 import Topbar from './Topbar'
 import TwoColumOne from './TwoColumOne'
-import goodluck_img from '../assets/images/misc/footer card.png'
 import whatsapp_icon from '../assets/images/icons/whatsapp.png'
 import QuestionBanner from './QuestionBanner'
+import FooterBanner from './FooterBanner'
+
 
 
 function HomePage() {
     return (
         <div>
             {/* begin */}
-
-
             <div>
                 <Topbar />
                 <Header />
-                <Caurousel />
 
+                <Caurousel />
                 <section id="content">
                     <div className="content-wrap" style={{ overflow: 'visible' }}>
                         <div className="container clearfix">
@@ -113,65 +112,23 @@ function HomePage() {
                         </div>
                     </div>
                 </section>
-
                 <TwoColumOne />
-
                 <QuestionBanner />
-
                 {/* <RibbonBannerMembership /> */}
-
-
                 <RibbonBanner />
-
-
-
-
                 <Services type="" name="Our Services" see_all_btn={false} />
-
-
                 <RibbonBannerMembership />
-
                 <Services type="customer" name="Customer Feedback" see_all_btn={false} />
 
-                <section id="content">
-                    <div className="content-wrap" style={{
-                        overflow: 'visible',
-                        zIndex: '1',
-                        padding: '0px',
-                        marginBottom: '-50px',
+
+                <FooterBanner />
 
 
-                    }}>
-                        <div className="container clearfix d-flex justify-content-center mt-5">
-                            <div className="row xcol-mb-50 mb-0 footer-banner"  >
-                                <div
-                                    className='footer-banner-text'
-
-                                >
-                                    <div className='heading-small'>Do you have a requirement ?</div>
-                                    <div className='footer-banner-desc'>We provide better freight & service in the kingodom of Saudi Arabia with our expertise</div>
-                                    <button className='btn btnprimary' placeholder=''
-                                        style={{ width: 'auto', height: "35px", borderRadius: '5px', marginTop: '10px' }}
-                                    >Get a Quote</button>
-                                </div>
-
-
-                                <img src={goodluck_img} alt="goodluck" className='footer-banner-img' />
-
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <Footer />
-
                 <div className="position-fixed  bottom-0 end-0 whatsapp-icon" >
                     <img src={whatsapp_icon} alt="whatsapp" />
                 </div>
-
             </div >
-
-
-
             {/* end */}
         </div >
     )
