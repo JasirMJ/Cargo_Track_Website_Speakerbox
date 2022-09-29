@@ -23,27 +23,27 @@ function Header() {
                         </div>
                         <nav className="primary-menu style-3 menu-spacing-margin">
                             <ul className="menu-container">
-                                <li className="menu-item xcurrent"><a className="menu-link" >
-                                    <Link to="/home">
+                                <li className="menu-item xcurrent"><span  >
+                                    <Link to="/home" className="menu-link">
                                         <div>Home</div>
                                     </Link>
-                                </a></li>
-                                <li className="menu-item "><a className="menu-link" >
-                                    <Link to="/about">
+                                </span></li>
+                                <li className="menu-item "><span>
+                                    <Link to="/about" className="menu-link" >
                                         <div>About Us</div>
                                     </Link>
-                                </a></li>
-                                <li className="menu-item"><a className="menu-link" >
-                                    <Link to="/services">
+                                </span></li>
+                                <li className="menu-item"><span >
+                                    <Link to="/services" className="menu-link">
                                         <div>Services</div>
 
                                     </Link>
-                                </a></li>
-                                <li className="menu-item"><a className="menu-link" >
-                                    <Link to="/gallery">
+                                </span></li>
+                                <li className="menu-item"><span >
+                                    <Link to="/gallery" className="menu-link">
                                         <div>Gallery</div>
                                     </Link>
-                                </a></li>
+                                </span></li>
                                 {/* <li className="menu-item"><a className="menu-link" href="demo-medical-doctors.html">
                                     <div>Doctors</div>
                                 </a>
