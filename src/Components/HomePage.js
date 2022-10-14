@@ -10,17 +10,34 @@ import TwoColumOne from './TwoColumOne'
 import whatsapp_icon from '../assets/images/icons/whatsapp.png'
 import QuestionBanner from './QuestionBanner'
 import FooterBanner from './FooterBanner'
+import { useEffect } from 'react'
 
 
 
 function HomePage() {
+
+    const [heading01, setHeading01] = React.useState('More than just a')
+    const [heading02, setHeading02] = React.useState('Moving')
+    const [desc, setDesc] = React.useState('Moving company that goes beyond simple relocation by ensuring quality services and reliability of our customers.')
+    const [button, setButton] = React.useState({
+        text: 'Contact Us',
+        link: '/country-guide'
+    })
+
+    useEffect(() => {
+        // alert('Welcome to our website')
+        //  refresh the page on load 
+        // window.location.reload();
+        window.scrollTo(0, 0)
+    }, [])
+
+
     return (
         <div>
             {/* begin */}
             <div>
                 <Topbar />
                 <Header />
-
                 <Caurousel />
                 <section id="content">
                     <div className="content-wrap" style={{ overflow: 'visible' }}>
@@ -112,18 +129,14 @@ function HomePage() {
                         </div>
                     </div>
                 </section>
-                <TwoColumOne />
+                <TwoColumOne page="home" />
                 <QuestionBanner />
                 {/* <RibbonBannerMembership /> */}
                 <RibbonBanner />
                 <Services type="" name="Our Services" see_all_btn={false} />
                 <RibbonBannerMembership />
                 <Services type="customer" name="Customer Feedback" see_all_btn={false} />
-
-
                 <FooterBanner />
-
-
                 <Footer />
                 <div className="position-fixed  bottom-0 end-0 whatsapp-icon" >
                     <img src={whatsapp_icon} alt="whatsapp" />

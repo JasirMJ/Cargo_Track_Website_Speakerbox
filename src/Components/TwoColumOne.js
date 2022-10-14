@@ -4,7 +4,7 @@ import img_labour from "../assets/images/misc/Group 973.png"
 import img_building from "../assets/images/misc/Group 971.png"
 
 
-function TwoColumOne() {
+function TwoColumOne({ page, heading01, heading02, desc, button }) {
     return (
 
         <div className="xsection row p-0 align-items-stretch dark topmargin-sm"
@@ -21,7 +21,34 @@ function TwoColumOne() {
 
                 }}
             >
-                <div
+                <div style={{ width: '80%', }}>
+                    {page === 'home' ? <>
+                        <img src={"images/misc/Group 971.png"} />
+                        <div className='banner_font color-secondary'>The Best <span className='banner_font  color-primary-medium'> Moving </span> </div>
+                        <div className='banner_font color-secondary'>Company in the </div>
+                        <div className='banner_font color-primary-medium'>Kingdom</div>
+                        <div className='color-primary-medium'>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
+                        <button className='btn btnprimary  mt-1'>Country Guide</button>
+                    </> : <>
+                        {/* <img src={"images/misc/Group 971.png"} /> */}
+                        <div className='banner_font  color-primary-medium'>{heading01} </div>
+                        <div className='banner_font color-secondary'>{heading02}</div>
+                        <div className='banner_font color-primary-medium'></div>
+                        <div className='color-primary-medium'>{desc}</div>
+                        {button &&
+                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                        }
+
+                        {page === 'about' && <div className=' color-secondary w-100 text-decoration-underline'>
+                            Download e-brochure
+                        </div>}
+
+                    </>}
+
+
+
+                </div>
+                {/* <div
                     style={{
                         width: '80%',
                     }}
@@ -33,7 +60,7 @@ function TwoColumOne() {
                     <div className='banner_font color-primary-medium'>Kingdom</div>
                     <div className='color-primary-medium'>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
                     <button className='btn btnprimary  mt-1'>Country Guide</button>
-                </div>
+                </div> */}
 
 
             </div>
@@ -47,7 +74,7 @@ function TwoColumOne() {
                 <div className="form-widget col-padding" data-loader="button">
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }

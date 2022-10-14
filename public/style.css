@@ -116,6 +116,12 @@
     color: var(--text-color) !important;
 }
 
+.about_us_content {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 .home-contact {
     display: flex;
     justify-content: flex-end;

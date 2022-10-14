@@ -21,13 +21,11 @@ function Gallery() {
 
                 <div style={{ height: "50px" }} />
 
-
                 <GalleryWeb />
 
                 <GalleryMobile />
 
                 <div style={{ height: "50px" }} />
-
 
                 <FooterBanner />
                 <Footer />

@@ -24,9 +24,9 @@ function Header() {
                         <nav className="primary-menu style-3 menu-spacing-margin">
                             <ul className="menu-container">
                                 <li className="menu-item xcurrent"><span  >
-                                    <Link to="/home" className="menu-link">
+                                    <a href="/home" className="menu-link">
                                         <div>Home</div>
-                                    </Link>
+                                    </a>
                                 </span></li>
                                 <li className="menu-item "><span>
                                     <Link to="/about" className="menu-link" >
