@@ -9,12 +9,16 @@ import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-r
 import About from './Pages/About';
 import Services from './Pages/Services';
 import Gallery from './Pages/Gallery';
+import GetAQuote from './Pages/GetAQuote';
+import ContactUs from './Pages/ContactUs';
 
 function App() {
     return (
         <Router>
             <Routes>
                 {/* <Route exact path="/medicine/:id" element={<MedicinePage />} /> */}
+                <Route exact path="/contact-us" element={<ContactUs />} />
+                <Route exact path="/get-quote" element={<GetAQuote />} />
                 <Route exact path="/gallery" element={<Gallery />} />
                 <Route exact path="/services" element={<Services />} />
                 <Route exact path="/about" element={<About />} />

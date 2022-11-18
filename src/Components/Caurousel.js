@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import fast from '../assets/images/herobanner/fast.png';
 import kochi from '../assets/images/herobanner/kochi.png';
 import usa from '../assets/images/herobanner/usa.png';
@@ -48,9 +49,18 @@ function Caurousel() {
                                         <div className='color-primary-medium '>
                                             Now send your goods to and from hassle free at best rates
                                         </div>
-                                        <button className='btn btnprimary mt-1'>
-                                            Conbact Us
-                                        </button>
+
+                                        <Link to="/contact-us" className='btn-contact-us '>
+                                            <span>
+                                                Contact Us
+                                            </span>
+
+                                        </Link>
+                                        {/* <button className='btn btnprimary mt-1'>
+                                            <Link to="/contact-us">
+                                                Conbact Us
+                                            </Link>
+                                        </button> */}
 
                                     </div>
                                     <div className="slide">
@@ -64,12 +74,19 @@ function Caurousel() {
                                         >
                                             Fast & Easy
                                         </div>
+
                                         <div className='color-primary-medium '>
                                             Personal and Commercial Relocation Services
                                         </div>
-                                        <button className='btn btnprimary  mt-1'>
+                                        {/* <button className='btn btnprimary  mt-1'>
                                             Conbact Us
-                                        </button>
+                                        </button> */}
+                                        <Link to="/contact-us" className='btn-contact-us '>
+                                            <span>
+                                                Contact Us
+                                            </span>
+
+                                        </Link>
 
                                     </div>
                                     <div className="slide">
@@ -84,9 +101,16 @@ function Caurousel() {
                                             Providing customized and affordable Groupage Services to South India
                                         </div>
 
-                                        <button className='btn btnprimary mt-1'>
+                                        {/* <button className='btn btnprimary mt-1'>
                                             Conbact Us
-                                        </button>
+                                        </button> */}
+
+                                        <Link to="/contact-us" className='btn-contact-us '>
+                                            <span>
+                                                Contact Us
+                                            </span>
+
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

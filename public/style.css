@@ -17,6 +17,17 @@
     color: #fff;
 }
 
+.btn-contact-us {
+    width: 150px !important;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
 .btnprimary {
     background-color: var(--primary-color);
     color: var(--text-color)
@@ -88,6 +99,12 @@
 
 .service-heading {
     font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.form-heading {
+    font-size: 18px;
     color: var(--primary-color);
     font-weight: 500;
 }
@@ -240,7 +257,10 @@ ul {
 body {
     line-height: 1.5;
     color: #555;
-    font-family: Lato, sans-serif
+    font-family: Lato, sans-serif;
+    max-width: 1920px;
+    margin: auto !important;
+
 }
 
 a {

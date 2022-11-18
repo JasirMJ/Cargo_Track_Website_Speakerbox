@@ -11,6 +11,7 @@ import whatsapp_icon from '../assets/images/icons/whatsapp.png'
 import QuestionBanner from './QuestionBanner'
 import FooterBanner from './FooterBanner'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -118,9 +119,13 @@ function HomePage() {
                                         <input type="text" className="form-control" placeholder="Username" aria-label="Username" style={{ marginRight: '5px', borderRadius: '5px' }} />
 
                                         {/* <input type="text" className="form-control" placeholder="Server" aria-label="Server" /> */}
-                                        <button className='btn btnprimary' placeholder=''
+                                        <Link to='/get-quote' className='btn btnprimary'
                                             style={{ width: '50%', height: "40px", marginLeft: '5px', borderRadius: '5px' }}
-                                        >Get a Quote</button>
+                                        >Get a Quote</Link>
+                                        {/* <button className='btn btnprimary' placeholder=''
+                                            style={{ width: '50%', height: "40px", marginLeft: '5px', borderRadius: '5px' }}
+
+                                        >Get a Quote</button> */}
                                     </div>
 
 
@@ -132,7 +137,7 @@ function HomePage() {
                 <TwoColumOne page="home" />
                 <QuestionBanner />
                 {/* <RibbonBannerMembership /> */}
-                <RibbonBanner />
+                {/* <RibbonBanner /> */}
                 <Services type="" name="Our Services" see_all_btn={false} />
                 <RibbonBannerMembership />
                 <Services type="customer" name="Customer Feedback" see_all_btn={false} />

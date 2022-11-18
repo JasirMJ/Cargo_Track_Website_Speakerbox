@@ -99,6 +99,15 @@
     background-size: 100% 100%;
 }
 
+.form-control-1 {
+    border-radius: 5px !important;
+    margin: 10px;
+    padding: 10px;
+    color: #999;
+    background-color: var(--primary-color-light);
+    border-color: rgba(255, 255, 255, .15);
+}
+
 /* css when device smaller than 400px width */
 @media (max-width: 400px) {
     html {

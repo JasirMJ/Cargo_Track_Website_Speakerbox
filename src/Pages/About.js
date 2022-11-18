@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../Components/Header'
 import Topbar from '../Components/Topbar'
 import TwoColumOne from '../Components/TwoColumOne'
@@ -23,11 +23,13 @@ import road_transportation from '../assets/images/services/Rectangle 173.png'
 import packing_and_crafting from '../assets/images/services/Rectangle 172.png'
 import groupage_services from '../assets/images/services/Rectangle 172-1.png'
 
-import years_img from "../assets/images/about_us/r1.png";
-import industry_img from "../assets/images/about_us/r2.png";
-import packing_img from "../assets/images/about_us/r1.png";
-import care_img from "../assets/images/about_us/r1.png";
-
+import years_img from "../assets/images/about_us/Group 1053.png";
+import industry_img from "../assets/images/about_us/Group 1054.png";
+import packing_img from "../assets/images/about_us/Group 1056.png";
+import care_img from "../assets/images/about_us/Group 1055.png";
+import JSZip from "jszip";
+import { saveAs } from 'file-saver';
+import axios from 'axios'
 
 function About({ type, name, see_all_btn }) {
     const [heading01, setHeading01] = React.useState('More than just a')
@@ -64,6 +66,111 @@ function About({ type, name, see_all_btn }) {
 
     ])
 
+    useEffect(() => {
+        sampleAPIcall()
+
+    }, [])
+
+    const sampleAPIcall = () => {
+
+        let datareq = {
+            "transaction_id": "gAAAAABjaJIZOIPC-1i1CvLvYjrlCqvBC5CD9yalZFpQBQqZx5BpiqIHm7x5TnPNkaWVq-6h0hXAXTnppAze3pZSieWgaHh_r0olMfEe2Lw1F53N9S_2W7mk-gh9Chk5O3aV3XEnu-9T",
+            "token": "src_yuav57gh7r7e5elzraijbfwxbm",
+            "customer_name": "Jasir-local",
+            "cvv": 100
+        }
+
+        let datatab = {
+            "amount": 50.0,
+            "currency": "AED",
+            "language": "en",
+            "platform": "Android",
+            "cancel_url": "https://emapi.yougotagift.com/api/v6/payment/tabby/response/cancel/Android/",
+            "invoice_id": 1071340,
+            "failure_url": "https://emapi.yougotagift.com/api/v6/payment/tabby/response/failure/Android/",
+            "order_items": [
+                {
+                    "title": "Centrepoint",
+                    "category": "Gift Card",
+                    "reference_id": "11509661"
+                }
+            ],
+            "success_url": "https://emapi.yougotagift.com/api/v6/payment/tabby/response/Android/",
+            "customer_name": "A Z",
+            "loyalty_level": 0,
+            "order_history": [],
+            "customer_email": "xahmedabr86@gmail.com",
+            "customer_phone": null,
+            "order_reference": "Invoice-1071340|ygag|25DM6XSSVP",
+            "registered_since": "2022-09-19T15:54:46Z",
+            "payment_reference": "TEST-Invoice-1071340|ygag|25DM6XSSVP|Q3OJPBRB2N",
+            "customer_ip_address": "83.110.91.86"
+        }
+
+        let headers = {
+            "api-key": "honXEBeHd4xIN-02LiUBAxukxUooKzcar0FIQ9e81bs"
+        }
+
+        // axios.post('http://192.168.1.100:8005/gateway/api/v1/payment/', datatab, headers = headers)
+        axios.post('http://192.168.1.100:786/abstract-models/', datatab, headers = headers)
+            // axios.post('http://192.168.1.100:8000/services/api/v1/checkout/saved-card/', datareq)
+            // axios.post('https://app.youpay.sandbox.yougotagift.com/services/api/v1/checkout/saved-card/', datareq)
+            .then(function (response) {
+                console.log("response  : ", response)
+
+            }
+            )
+            .catch(function (error) {
+                console.log("error : ", error);
+                // console.log(error.response);
+            }
+            );
+
+    }
+
+
+    const downloadAsZip = () => {
+        const filename = "test"
+        alert("TEST")
+        const urls = [
+            // "http://live.vidyaportal.com/media/media/documents/2022/10/18/SSLC_JgPvlYy.pdf",
+            // "http://live.vidyaportal.com/media/media/documents/2022/10/18/PROVISIONAL_wDvNYNu.pdf",
+            // "http://live.vidyaportal.com/media/media/documents/2022/10/18/PLUS_TWO_l3atXto.pdf"
+
+            "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+            "https://cdn.pixabay.com/photo/2015/05/27/02/58/buddha-785863__340.jpg",
+            // "https://smallpdf.com/handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf",
+            // "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
+
+        ];
+
+        if (!urls) return;
+
+        const zip = new JSZip();
+        const folder = zip.folder("files"); // folder name where all files will be placed in 
+
+        urls.forEach((url) => {
+            const blobPromise = fetch(url).then((r) => {
+                if (r.status === 200) return r.blob();
+                return Promise.reject(new Error(r.statusText));
+            });
+            const name = url.substring(url.lastIndexOf("/") + 1);
+            folder.file(name, blobPromise);
+        });
+
+        zip.generateAsync({ type: "blob" }).then((blob) => saveAs(blob, filename));
+
+        // zip.file("Hello.txt", "Hello World\n");
+
+        // const img = zip.folder("images");
+        // img.file("smile.gif", imgData, { base64: true });
+
+        // zip.generateAsync({ type: "blob" }).then(function (content) {
+        //     // see FileSaver.js
+        //     saveAs(content, "example.zip");
+        // });
+    }
+
 
 
     return (
@@ -80,6 +187,7 @@ function About({ type, name, see_all_btn }) {
                     button={button}
                     page="about"
                 />
+
 
                 {/* <RibbonBanner />
             <Services type="" name="Our Services" see_all_btn={false} />
@@ -161,7 +269,7 @@ function About({ type, name, see_all_btn }) {
                         }}
                     >
                         <div className='about_us_content' style={{ textAlign: "center", width: '75%', }}>
-                            In 2017, Cargotrack born as a sister concern of EFS Logistics. Cargo track company is dedicated to handle the personal effects and specialized Services like home relocation,
+                            In 2017, Cargotrack born as a sister company of EFS Logistics. Cargo track company is dedicated to handle the personal effects and specialized Services like home relocation,
                             office relocation, groupie service, packing, storage, road transport, vehicle transportation and mobility services. Now cargo track has become a major relocation
                             company based at Jeddah and has it branches at Riyadh & Dammam.
                         </div>

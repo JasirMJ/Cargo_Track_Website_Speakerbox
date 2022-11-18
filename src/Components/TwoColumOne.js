@@ -1,7 +1,7 @@
 import React from 'react'
-import img_labour from "../assets/images/misc/Group 973.png"
+// import img_labour from "../assets/images/misc/Group 973.png"
 
-import img_building from "../assets/images/misc/Group 971.png"
+// import img_building from "../assets/images/misc/Group 971.png"
 
 
 function TwoColumOne({ page, heading01, heading02, desc, button }) {
@@ -30,53 +30,187 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <div className='color-primary-medium'>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
                         <button className='btn btnprimary  mt-1'>Country Guide</button>
                     </> : <>
-                        {/* <img src={"images/misc/Group 971.png"} /> */}
-                        <div className='banner_font  color-primary-medium'>{heading01} </div>
-                        <div className='banner_font color-secondary'>{heading02}</div>
-                        <div className='banner_font color-primary-medium'></div>
-                        <div className='color-primary-medium'>{desc}</div>
-                        {button &&
-                            <button className='btn btnprimary  mt-1'>{button.text}</button>
-                        }
-
-                        {page === 'about' && <div className=' color-secondary w-100 text-decoration-underline'>
-                            Download e-brochure
-                        </div>}
+                        {page === 'get-quote' ? <>
+                            <Quoteform />
+                        </> : <>
+                            <div className='banner_font  color-primary-medium'>{heading01} </div>
+                            <div className='banner_font color-secondary'>{heading02}</div>
+                            <div className='banner_font color-primary-medium'></div>
+                            <div className='color-primary-medium'>{desc}</div>
+                            {button &&
+                                <button className='btn btnprimary  mt-1'>{button.text}</button>
+                            }
+                        </>}
 
                     </>}
 
 
 
                 </div>
-                {/* <div
+            </div>
+
+            {page === 'home' ? <>
+                <div id="xbooking-appointment-form" className="col-lg-6 p-0"
                     style={{
-                        width: '80%',
+                        height: '70vh',
+                        background: `url("images/misc/Group 973.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
                     }}
                 >
-                    <img src={"images/misc/Group 971.png"} />
 
-                    <div className='banner_font color-secondary'>The Best <span className='banner_font  color-primary-medium'> Moving </span> </div>
-                    <div className='banner_font color-secondary'>Company in the </div>
-                    <div className='banner_font color-primary-medium'>Kingdom</div>
-                    <div className='color-primary-medium'>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
-                    <button className='btn btnprimary  mt-1'>Country Guide</button>
-                </div> */}
-
-
-            </div>
-            <div id="xbooking-appointment-form" className="col-lg-6 p-0"
-                style={{
-                    height: '70vh',
-                    background: `url("images/misc/Group 973.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
-                }}
-            >
-
-                <div className="form-widget col-padding" data-loader="button">
+                    <div className="form-widget col-padding" data-loader="button">
+                    </div>
                 </div>
-            </div>
+
+            </> : <>
+
+
+                {page === 'get-quote' && <>
+
+                    <div id="xbooking-appointment-form" className="col-lg-6 p-0"
+                        style={{
+                            height: '70vh',
+                            background: `url("images/misc/GET A QOUTE.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
+                        }}
+                    >
+
+                        <div className="form-widget col-padding" data-loader="button">
+                        </div>
+                    </div>
+                </>}
+
+                {page === 'services' && <>
+
+                    <div id="xbooking-appointment-form" className="col-lg-6 p-0"
+                        style={{
+                            height: '70vh',
+                            background: `url("images/misc/SERVICES.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
+                        }}
+                    >
+
+                        <div className="form-widget col-padding" data-loader="button">
+                        </div>
+                    </div>
+                </>}
+
+                {page === 'get-quote' && <>
+
+                    <div id="xbooking-appointment-form" className="col-lg-6 p-0"
+                        style={{
+                            height: '70vh',
+                            background: `url("images/misc/COMPANY.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
+                        }}
+                    >
+
+                        <div className="form-widget col-padding" data-loader="button">
+                        </div>
+                    </div>
+                </>}
+
+
+
+
+            </>}
+
+
+
         </div >
 
     )
 }
 
 export default TwoColumOne
+
+function Quoteform() {
+
+    return (
+        <div className="content-wrap" style={{ overflow: 'visible' }}>
+            <div className="container clearfix">
+                <div className="row col-mb-50 mb-0 xbg-primary" style={{
+                    // marginTop: '-364px',
+                    color: 'white',
+                    zIndex: '10000',
+                }} >
+
+                    <div className="heading-large ">
+                        <span className='color-primary-medium'>Get a </span>
+                        <span className='color-secondary'>Quote</span>
+
+                    </div>
+
+                    <div className='col-sm-12 col-lg-12 '
+                        style={{
+                            borderRadius: '20px 20px 20px 20px',
+                            padding: '30px'
+                        }}
+                    >
+                        <div class="form-heading">Personal Details</div>
+
+                        <div className="input-group mb-3  mt-2">
+                            <input type="text" className="form-control-1" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" />
+                        </div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" />
+                        </div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1" placeholder="E-Mail" aria-label="E-Mail" aria-describedby="basic-addon1" />
+                        </div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1" placeholder="Mobile Number" aria-label="Mobile Number" aria-describedby="basic-addon1" />
+                        </div>
+
+
+
+                        <div class="form-heading">Moving From (Origin)</div>
+
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="Country/Territory" aria-label="Country/Territory" />
+                            <input type="text" className="form-control-1" placeholder="City/Town/Localityy" aria-label="City/Town/Locality" />
+                        </div>
+
+                        <div class="form-heading">Moving To (Destination)</div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="Country/Territory" aria-label="Country/Territory" />
+                            <input type="text" className="form-control-1" placeholder="City/Town/Locality" aria-label="City/Town/Locality" />
+                        </div>
+
+                        <div class="form-heading">Who is Moving </div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="No.of Adults" aria-label="No.of Adults" />
+                            <input type="text" className="form-control-1" placeholder="No.of Kids" aria-label="No.of Kids" />
+                        </div>
+
+
+                        <div class="form-heading">Why are you Moving </div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="eg: Family Reasons" aria-label="eg: Family Reasons" />
+                        </div>
+
+                        <div class="form-heading">What are you Moving </div>
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1" placeholder="eg: 1-2 Bedroom Home" aria-label="eg: 1-2 Bedroom Home" />
+                        </div>
+
+
+
+                        <div class="form-heading">Pick up Date </div>
+                        <div className="input-group mb-3  mt-2">
+                            <input type="text" className="form-control-1" placeholder="Pick a Date" aria-label="Pick a Date" aria-describedby="basic-addon1" />
+                        </div>
+
+                        <div class="form-heading">Convenient time to call back?</div>
+                        <div className="input-group mb-3  mt-2">
+                            <input type="text" className="form-control-1" placeholder="Select a time slot " aria-label="Select a time slot " aria-describedby="basic-addon1" />
+                        </div>
+
+                        <div className="input-group mb-3">
+                            <button className='btn btnprimary'
+                                style={{ width: '50%', height: "40px", marginLeft: '5px', borderRadius: '5px' }}
+                            >Get a Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+
+}
