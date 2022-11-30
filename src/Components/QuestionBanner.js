@@ -29,7 +29,7 @@ function QuestionBanner() {
                     <div className='heading-small'>Are you considering a </div>
                     <div className='heading-small'>relocation to Saudi Arabia</div>
                     <div className='normal-text-large'>Get in touch with us for assistance</div>
-                    <button className='btn btnprimary  mt-3'>Country Guide</button>
+                    <a className='btn btnprimary  mt-3' href='/country-guide'>Country Guide</a>
                 </div>
 
 

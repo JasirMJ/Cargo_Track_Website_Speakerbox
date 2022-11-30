@@ -22,27 +22,42 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                 }}
             >
                 <div style={{ width: '80%', }}>
-                    {page === 'home' ? <>
+                    {page === 'home' && <>
                         <img src={"images/misc/Group 971.png"} />
                         <div className='banner_font color-secondary'>The Best <span className='banner_font  color-primary-medium'> Moving </span> </div>
                         <div className='banner_font color-secondary'>Company in the </div>
                         <div className='banner_font color-primary-medium'>Kingdom</div>
                         <div className='color-primary-medium'>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
                         <button className='btn btnprimary  mt-1'>Country Guide</button>
-                    </> : <>
-                        {page === 'get-quote' ? <>
-                            <Quoteform />
-                        </> : <>
-                            <div className='banner_font  color-primary-medium'>{heading01} </div>
-                            <div className='banner_font color-secondary'>{heading02}</div>
-                            <div className='banner_font color-primary-medium'></div>
-                            <div className='color-primary-medium'>{desc}</div>
-                            {button &&
-                                <button className='btn btnprimary  mt-1'>{button.text}</button>
-                            }
-                        </>}
-
                     </>}
+
+                    {page === 'get-quote' && <>
+                        <Quoteform />
+                    </>}
+
+                    {page === 'contact-us' && <>
+
+                        <div className='banner_font  color-primary-medium'>{heading01} </div>
+                        <div className='banner_font color-secondary'>{heading02}</div>
+                        <div className='banner_font color-primary-medium'></div>
+                        <div className='color-primary-medium'>{desc}</div>
+                        {button &&
+                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                        }
+                        <Contactform />
+                    </>}
+
+                    {/* {page === 'contact-us' && <>
+
+                        <div className='banner_font  color-primary-medium'>{heading01} </div>
+                        <div className='banner_font color-secondary'>{heading02}</div>
+                        <div className='banner_font color-primary-medium'></div>
+                        <div className='color-primary-medium'>{desc}</div>
+                        {button &&
+                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                        }
+                    </>} */}
+
 
 
 
@@ -92,7 +107,9 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                     </div>
                 </>}
 
-                {page === 'get-quote' && <>
+
+
+                {page === 'about' && <>
 
                     <div id="xbooking-appointment-form" className="col-lg-6 p-0"
                         style={{
@@ -106,7 +123,32 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                     </div>
                 </>}
 
+                {page === 'country-guide' && <>
 
+                    <div id="xbooking-appointment-form" className="col-lg-6 p-0"
+                        style={{
+                            height: '70vh',
+                            background: `url("images/misc/COMPANY.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
+                        }}
+                    >
+
+                        <div className="form-widget col-padding" data-loader="button">
+                        </div>
+                    </div>
+                </>}
+                {page === 'contact-us' && <>
+
+                    <div id="xbooking-appointment-form" className="col-lg-6 p-0"
+                        style={{
+                            height: '70vh',
+                            background: `url("images/misc/COMPANY.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
+                        }}
+                    >
+
+                        <div className="form-widget col-padding" data-loader="button">
+                        </div>
+                    </div>
+                </>}
 
 
             </>}
@@ -213,4 +255,51 @@ function Quoteform() {
         </div>
     )
 
+}
+
+function Contactform() {
+
+    return (
+        <div className="content-wrap" style={{ overflow: 'visible' }}>
+            <div className="container clearfix">
+                <div className="row col-mb-50 mb-0 xbg-primary" style={{
+                    // marginTop: '-364px',
+                    color: 'white',
+                    zIndex: '10000',
+                }} >
+
+                    <div className='col-sm-12 col-lg-12 '
+                        style={{
+                            borderRadius: '20px 20px 20px 20px',
+                            padding: '30px'
+                        }}
+                    >
+
+                        {/* <div class="form-heading">Moving From (Origin)</div> */}
+
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="First Name" aria-label="First Name" />
+                            <input type="text" className="form-control-1" placeholder="Last Name" aria-label="Last Name" />
+                        </div>
+                        {/* 
+                        <div class="form-heading">Moving To (Destination)</div> */}
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="E-mail" aria-label="E-mail" />
+                            <input type="text" className="form-control-1" placeholder="Mobile Number" aria-label="Mobile Number" />
+                        </div>
+
+                        <div className="input-group mb-3">
+                            <input type="text" className="form-control-1 " placeholder="Tell us more about your" aria-label="No.of Adults" style={{minWidth:'75%', minHeight:"100px"}} />
+                        </div>
+
+                        <div className="input-group mb-3">
+                            <button className='btn btnprimary'
+                                style={{  height: "40px", marginLeft: '5px', borderRadius: '5px' }}
+                            >Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
