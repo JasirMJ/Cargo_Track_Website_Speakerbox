@@ -44,7 +44,7 @@ function HomePage() {
                     <div className="content-wrap" style={{ overflow: 'visible' }}>
                         <div className="container clearfix">
                             <div className="row col-mb-50 mb-0 xbg-primary" style={{
-                                marginTop: '-490px',
+                                marginTop: '-380px',
                                 color: 'white',
                                 zIndex: '10000',
                             }} >
@@ -86,6 +86,7 @@ function HomePage() {
                                 </div>
                                 <div className='col-sm-6 col-lg-3 '
                                     style={{
+                                        minWidth: "300px",
                                         backgroundColor: 'rgb(48,150,190,0.8)',
                                         borderRadius: '20px 20px 20px 20px',
                                         padding: '30px'
