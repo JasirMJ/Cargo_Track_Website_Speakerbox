@@ -86,7 +86,7 @@ function HomePage() {
                                 </div>
                                 <div className='col-sm-6 col-lg-3 '
                                     style={{
-                                        minWidth: "300px",
+                                        minWidth: "350px",
                                         backgroundColor: 'rgb(48,150,190,0.8)',
                                         borderRadius: '20px 20px 20px 20px',
                                         padding: '30px'
@@ -94,28 +94,28 @@ function HomePage() {
                                 >
                                     <div className='d-flex justify-content-center align-items-center col-12 '>Get a Free Moving Quote</div>
 
-                                    <div className="input-group mb-3  mt-2">
+                                    <div className="input-group mb-2  mt-1">
 
                                         <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                                     </div>
-                                    <div className="input-group mb-3">
+                                    <div className="input-group mb-2">
 
                                         <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                                     </div>
 
 
-                                    <div className="input-group mb-3">
+                                    <div className="input-group mb-2">
                                         <input type="text" className="form-control " style={{ marginRight: '5px', borderRadius: '5px' }} placeholder="Username" aria-label="Username" />
 
                                         <input type="text" className="form-control" style={{ marginLeft: '5px', borderRadius: '5px' }} placeholder="Server" aria-label="Server" />
                                     </div>
 
-                                    <div className="input-group mb-3">
+                                    <div className="input-group mb-2">
 
                                         <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
                                     </div>
 
-                                    <div className="input-group mb-3">
+                                    <div className="input-group mb-2">
                                         <input type="text" className="form-control" placeholder="Username" aria-label="Username" style={{ marginRight: '5px', borderRadius: '5px' }} />
 
                                         {/* <input type="text" className="form-control" placeholder="Server" aria-label="Server" /> */}
