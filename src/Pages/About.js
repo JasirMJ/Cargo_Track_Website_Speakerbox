@@ -30,6 +30,11 @@ import care_img from "../assets/images/about_us/Group 1055.png";
 import JSZip from "jszip";
 import { saveAs } from 'file-saver';
 import axios from 'axios'
+import icon_vision from '../assets/images/icons/Group 1048.png'
+import icon_mission from '../assets/images/icons/Group 1050.png'
+import icon from '../assets/images/icons/Group.png'
+
+
 
 function About({ type, name, see_all_btn }) {
     const [heading01, setHeading01] = React.useState('More than just a')
@@ -285,7 +290,9 @@ function About({ type, name, see_all_btn }) {
                             <div className="col-lg-6 col-md-6">
                                 <div className="feature-box fbox-outline fbox-dark fbox-effect clearfix ">
                                     <div className="fbox-content">
-                                        <div>ICON</div>
+
+
+                                        <div><img src={icon_vision} height="50" /> </div>
                                         <h5 className="m-0 text-color heading-medium ">Vision</h5>
                                         <div style={{ fontSize: '16px' }}>To establish ourself as market leaders by providing best customised relocation services</div>
                                         <div className="d-block d-md-block d-lg-none bottommargin" />
@@ -295,7 +302,10 @@ function About({ type, name, see_all_btn }) {
                             <div className="col-lg-6 col-md-6">
                                 <div className="feature-box fbox-outline fbox-dark fbox-effect clearfix">
                                     <div className="fbox-content">
-                                        <div>ICON</div>
+                                        <div>
+                                            <img src={icon_mission} height="50" />
+
+                                        </div>
                                         <h5 className="m-0 text-color heading-medium ">Mission</h5>
                                         <div style={{ fontSize: '16px' }}>To providing easy relocation service experience with complete customer focus at affordable price</div>
                                         <div className="d-block d-md-block d-lg-none bottommargin" />
@@ -321,7 +331,9 @@ function About({ type, name, see_all_btn }) {
                                 // flexDirection: 'column',
                             }}
                         >
-                            <div className='banner_font' >Why Choose Us</div>
+                            <div className='banner_font' >
+                                <img src={icon} height="50" style={{ marginRight: '10px' }} />
+                                Why Choose Us</div>
                             <div style={{ minWidth: '300px', maxWidth: '500px', }}>
                                 We understand that finding a reliable logistics partner to take care of your business with so many options can be a challenge. Here are a few reasons that set us apart from the crowd.
                             </div>

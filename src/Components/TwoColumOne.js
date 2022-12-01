@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import img_labour from "../assets/images/misc/Group 973.png"
 
 // import img_building from "../assets/images/misc/Group 971.png"
@@ -23,12 +24,18 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
             >
                 <div style={{ width: '80%', }}>
                     {page === 'home' && <>
-                        <img src={"images/misc/Group 971.png"} />
+                        <img src={"images/misc/Group 971.png"} height="100" />
                         <div className='banner_font color-secondary'>The Best <span className='banner_font  color-primary-medium'> Moving </span> </div>
                         <div className='banner_font color-secondary'>Company in the </div>
                         <div className='banner_font color-primary-medium'>Kingdom</div>
-                        <div className='color-primary-medium'>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
-                        <button className='btn btnprimary  mt-1'>Country Guide</button>
+                        <div className='color-primary-medium' style={{ maxWidth: '280px', fontWeight: "500" }}>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
+                        {/* <button className='btn btnprimary  mt-1'>Contact Us</button> */}
+                        <Link to="/contact-us" className='btn-contact-us  btnprimary'>
+                            <span>
+                                Contact Us
+                            </span>
+
+                        </Link>
                     </>}
 
                     {page === 'get-quote' && <>
@@ -47,7 +54,7 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <Contactform />
                     </>}
 
-                    {/* {page === 'contact-us' && <>
+                    {page === 'country-guide' && <>
 
                         <div className='banner_font  color-primary-medium'>{heading01} </div>
                         <div className='banner_font color-secondary'>{heading02}</div>
@@ -56,7 +63,27 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         {button &&
                             <button className='btn btnprimary  mt-1'>{button.text}</button>
                         }
-                    </>} */}
+                    </>}
+                    {page === 'about' && <>
+
+                        <div className='banner_font  color-primary-medium'>{heading01} </div>
+                        <div className='banner_font color-secondary'>{heading02}</div>
+                        <div className='banner_font color-primary-medium'></div>
+                        <div className='color-primary-medium'>{desc}</div>
+                        {button &&
+                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                        }
+                    </>}
+                    {page === 'services' && <>
+
+                        <div className='banner_font  color-primary-medium'>{heading01} </div>
+                        <div className='banner_font color-secondary'>{heading02}</div>
+                        <div className='banner_font color-primary-medium'></div>
+                        <div className='color-primary-medium'>{desc}</div>
+                        {button &&
+                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                        }
+                    </>}
 
 
 
@@ -136,12 +163,13 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         </div>
                     </div>
                 </>}
+
                 {page === 'contact-us' && <>
 
                     <div id="xbooking-appointment-form" className="col-lg-6 p-0"
                         style={{
                             height: '70vh',
-                            background: `url("images/misc/COMPANY.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
+                            background: `url("images/misc/CONTACT US.png") center center no-repeat`, backgroundSize: 'contain', minHeight: 250,
                         }}
                     >
 
@@ -289,12 +317,12 @@ function Contactform() {
                         </div>
 
                         <div className="input-group mb-3">
-                            <input type="text" className="form-control-1 " placeholder="Tell us more about your" aria-label="No.of Adults" style={{minWidth:'75%', minHeight:"100px"}} />
+                            <input type="text" className="form-control-1 " placeholder="Tell us more about your" aria-label="No.of Adults" style={{ minWidth: '75%', minHeight: "100px" }} />
                         </div>
 
                         <div className="input-group mb-3">
                             <button className='btn btnprimary'
-                                style={{  height: "40px", marginLeft: '5px', borderRadius: '5px' }}
+                                style={{ height: "40px", marginLeft: '5px', borderRadius: '5px' }}
                             >Submit</button>
                         </div>
                     </div>

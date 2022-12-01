@@ -11,6 +11,19 @@ import Footer from '../Components/Footer'
 import FooterBanner from '../Components/FooterBanner'
 import ServiceList from '../Components/Services'
 
+import gallery1 from '../assets/images/gallery/servises page.png'
+import gallery2 from '../assets/images/gallery/Rectangle 174-1.png'
+import gallery3 from '../assets/images/gallery/Rectangle 174-2.png'
+import gallery4 from '../assets/images/gallery/Rectangle 176.png'
+import gallery5 from '../assets/images/gallery/Rectangle 177.png'
+import gallery6 from '../assets/images/gallery/Rectangle 178.png'
+import gallery7 from '../assets/images/gallery/Rectangle 177.png'
+import gallery8 from '../assets/images/gallery/Rectangle 179.png'
+import gallery9 from '../assets/images/gallery/Rectangle 174.png'
+
+
+
+
 function Gallery() {
     return (
         <div>
@@ -47,7 +60,8 @@ const GalleryWeb = () => {
             <div class="row" style={{ height: 'auto' }}>
                 <div class="col-sm  d-flex justify-content-center align-items-center m-2 ">
                     <div style={{ height: "auto", }}>
-                        <img className='rounded' src="https://picsum.photos/400/600" alt="" />
+                        {/* <img className='rounded' src="https://picsum.photos/400/600" alt="" /> */}
+                        <img className='rounded' src={"https://picsum.photos/400/600"} alt="" />
                     </div>
                 </div>
                 <div class="col-sm d-flex justify-content-between align-items-center flex-column m-2">

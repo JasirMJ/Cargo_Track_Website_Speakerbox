@@ -39,29 +39,22 @@ function ContactUs({ type, name, see_all_btn }) {
         link: '/country-guide'
     })
 
-
-    const [services, setServices] = React.useState([
+    const [customerFeedback, setCustomerFeedback] = React.useState([
         {
-            "image": years_img,
-            "heading": "7 YEARS OF EXPERIENCE",
-            "description": "7 years of experience equates to thousands of hours perfecting our operational services, all you don't have worry about a thing"
+            "country": "Jeddah",
+            "address": "King Khalid Road, Al-Baghaduya AL Sharqiyah",
+            "mobile": "+966 59692 9917",
         },
         {
-            "image": industry_img,
-            "heading": "PROVEN INDUSTRY EXPERTISE",
-            "description": "A team of dedicated professionals with the know-how of getting it there at maximum efficiency."
+            "country": "Riyadh",
+            "address": "Hanin Ibh Ishaq Street, Al Futhra, Riyadh 12632",
+            "mobile": "+966 58297 1155",
         },
         {
-            "image": packing_img,
-            "heading": "PROFESSIONAL PACKING",
-            "description": "We have a team of proficient carpenters, experienced supervisors & survey team."
+            "country": "Dammam",
+            "address": "Al Amir Muhammed Ibn Fahad Road, Ar Rabi, Dammam 32241-56900",
+            "mobile": "+966 58182 9256",
         },
-        {
-            "image": care_img,
-            "heading": "SPECIALIZED CARE",
-            "description": "Wheather it's a one-of-a-kind antique of the finest of glassware, our content handling procedure rates best in class and the reasons are clear."
-        },
-
 
     ])
 
@@ -81,7 +74,20 @@ function ContactUs({ type, name, see_all_btn }) {
                     page="contact-us"
                 />
 
-                
+                <section id="content">
+                    <div className="content-wrap">
+                        <div className="container clearfix">
+                            <div className="row col-mb-50 mb-0 xbg-primary">
+
+                                {customerFeedback.map((item, index) => {
+                                    return <AddressCard item={item} />
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
 
 
                 {/* <RibbonBanner />
@@ -103,27 +109,47 @@ function ContactUs({ type, name, see_all_btn }) {
 
 export default ContactUs
 
+const AddressCard = ({ item }) => {
+    return (<div className="col-sm-4 col-lg-4 " >
+        <div className="address-card" style={{ height: 'auto' }} >
+            {/* <div className="team-image">
+                <img src="demos/medical/images/doctors/1.jpg" className='service-card ' style={{ height: '300px' }} alt="Dr. John Doe" />
+            </div> */}
+            <div className=" ">
+                <div className=" " >
+                    <div style={{ display: 'flex' }}>
+                        {/* <img src={item.profile_pic} /> */}
 
-const ServiceCard = ({ service }) => {
+                        <div
+                            style={{
 
-    return (<div className="col-sm-6 col-lg-6 " style={{
-        padding: "0px 30px 30px 30px",
-    }}>
-        <div className="xteam service-card d-flex " >
-            <div className="team-image" style={{ height: "auto", width: "300px", }}>
-                <img src={service.image} className='service-card ' style={{ width: "100%" }} alt="image" />
-            </div>
-            <div className="team-desc  " style={{ width: "500px", }}>
-                <div className="xteam-title p-4" >
-                    <span className='service-heading'>{service.heading}</span>
-                    <br />
-                    <span className='service-desc' >
-                        {service.description}
-                    </span>
+                                display: 'flex',
+                                flex: 1,
+                                justifyContent: 'center',
+                                flexDirection: 'column',
+                                // maxWidth: "300px",
+                                minHeight: "150px",
+                                // backgroundColor: "green",
+                                // alignItems: "center",
+                                textAlign: "center",
+
+                            }}
+                        >
+                            <div className='customer-feedback-heading color-primary' style={{ height: "50px" }}>{item.country}</div>
+
+                            <div className='bgprimary color-secondary customer-feedback-desc d-flex flex-grow-1' style={{ padding: '10px', }} >{item.address}</div>
+                            <span className='bgprimary customer-feedback-desc ' style={{ borderRadius: "0px 0px 10px 10px ", paddingBottom: "20px" }} >Mobile : {item.mobile}</span>
+
+                        </div>
+                    </div>
+                    {/* <div style={{ marginTop: '5px' }}>
+                        <span className='customer-feedback-desc ' >Mobile : {item.mobile}</span>
+                    </div> */}
+
+
                 </div>
             </div>
         </div>
     </div>
-
     )
 }

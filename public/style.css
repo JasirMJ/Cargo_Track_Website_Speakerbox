@@ -28,17 +28,26 @@
     border-radius: 10px;
 }
 
+/* .btn-contact-us:hover {
+    background-color: var(--primary-color-medium);
+    color: #fff;
+} */
+
 .btnprimary {
     background-color: var(--primary-color);
     color: var(--text-color)
 }
 
 .btnprimary:hover {
-    color: var(--primary-color);
-    background-color: var(--text-color)
+    color: #fff;
+    background-color: var(--primary-color-medium);
 }
 
 .bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bgprimary {
     background-color: var(--primary-color);
 }
 
@@ -150,8 +159,8 @@
 
 
 .banner_font {
-    font-size: 55px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .btn-see-all {
@@ -174,6 +183,15 @@
 
 .clr-white {
     color: #fff;
+}
+
+.address-card {
+    background-color: var(--secondary-color);
+    width: 300px;
+
+    color: #fff;
+    border-radius: 10px;
+
 }
 
 
@@ -3724,7 +3742,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
     display: block;
     line-height: 22px;
     padding: 14px 5px;
-    color: #444;
+    color: var(--primary-color-medium);
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 1px;

@@ -44,14 +44,11 @@ function HomePage() {
                     <div className="content-wrap" style={{ overflow: 'visible' }}>
                         <div className="container clearfix">
                             <div className="row col-mb-50 mb-0 xbg-primary" style={{
-                                marginTop: '-364px',
+                                marginTop: '-490px',
                                 color: 'white',
                                 zIndex: '10000',
                             }} >
-                                <div className='col-sm-6 col-lg-8 home-contact contact-details' style={{
-                                    height: 'auto',
-                                    margin: '0px -14px 6px -24px;',
-                                }} >
+                                <div className='col-sm-6 col-lg-8 home-contact contact-details' style={{ height: 'auto', margin: '0px -14px 6px -24px;', }} >
                                     <div
                                         style={{
                                             display: 'flex',
@@ -61,6 +58,8 @@ function HomePage() {
                                             width: '400px',
                                         }}
                                     >
+
+
                                         <div className='bgsecondary d-flex align-items-center flex-grow-1'>
                                             <div>
                                                 <i className="fa fa-envelope p-2" aria-hidden="true"></i>
@@ -85,7 +84,7 @@ function HomePage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='col-sm-6 col-lg-4 '
+                                <div className='col-sm-6 col-lg-3 '
                                     style={{
                                         backgroundColor: 'rgb(48,150,190,0.8)',
                                         borderRadius: '20px 20px 20px 20px',

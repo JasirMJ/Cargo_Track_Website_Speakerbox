@@ -50,7 +50,7 @@ function Caurousel() {
                                             Now send your goods to and from hassle free at best rates
                                         </div>
 
-                                        <Link to="/contact-us" className='btn-contact-us '>
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary '>
                                             <span>
                                                 Contact Us
                                             </span>
@@ -81,7 +81,7 @@ function Caurousel() {
                                         {/* <button className='btn btnprimary  mt-1'>
                                             Conbact Us
                                         </button> */}
-                                        <Link to="/contact-us" className='btn-contact-us '>
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary'>
                                             <span>
                                                 Contact Us
                                             </span>
@@ -105,7 +105,7 @@ function Caurousel() {
                                             Conbact Us
                                         </button> */}
 
-                                        <Link to="/contact-us" className='btn-contact-us '>
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary'>
                                             <span>
                                                 Contact Us
                                             </span>

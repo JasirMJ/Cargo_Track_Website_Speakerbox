@@ -8,6 +8,7 @@ import mobility_service from '../assets/images/services/Rectangle 172-3.png'
 import road_transportation from '../assets/images/services/Rectangle 173.png'
 import packing_and_crafting from '../assets/images/services/Rectangle 172.png'
 import groupage_services from '../assets/images/services/Rectangle 172-1.png'
+import icon from '../assets/images/icons/Group.png'
 
 
 function Services({ type, name, see_all_btn }) {
@@ -81,7 +82,10 @@ function Services({ type, name, see_all_btn }) {
                         // flexDirection: 'column',
                     }}
                 >
-                    <h1>{name}</h1>
+                    <h1>
+                        <img src={icon} height="50" style={{ marginRight: '10px' }} />
+                        {name}
+                    </h1>
                     {see_all_btn && <button className="btn-see-all ">See all </button>}
 
                 </div>
