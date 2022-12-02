@@ -210,15 +210,8 @@ function CountryGuide({ type, name, see_all_btn }) {
         const filename = "test"
         alert("TEST")
         const urls = [
-            // "http://live.vidyaportal.com/media/media/documents/2022/10/18/SSLC_JgPvlYy.pdf",
-            // "http://live.vidyaportal.com/media/media/documents/2022/10/18/PROVISIONAL_wDvNYNu.pdf",
-            // "http://live.vidyaportal.com/media/media/documents/2022/10/18/PLUS_TWO_l3atXto.pdf"
-
             "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
             "https://cdn.pixabay.com/photo/2015/05/27/02/58/buddha-785863__340.jpg",
-            // "https://smallpdf.com/handle-widget#url=https://assets.ctfassets.net/l3l0sjr15nav/29D2yYGKlHNm0fB2YM1uW4/8e638080a0603252b1a50f35ae8762fd/Get_Started_With_Smallpdf.pdf",
-            // "https://www.whatsappimages.in/wp-content/uploads/2021/07/Top-HD-sad-quotes-for-whatsapp-status-in-hindi-Pics-Images-Download-Free.gif",
-
         ];
 
         if (!urls) return;
@@ -237,15 +230,6 @@ function CountryGuide({ type, name, see_all_btn }) {
 
         zip.generateAsync({ type: "blob" }).then((blob) => saveAs(blob, filename));
 
-        // zip.file("Hello.txt", "Hello World\n");
-
-        // const img = zip.folder("images");
-        // img.file("smile.gif", imgData, { base64: true });
-
-        // zip.generateAsync({ type: "blob" }).then(function (content) {
-        //     // see FileSaver.js
-        //     saveAs(content, "example.zip");
-        // });
     }
 
     return (

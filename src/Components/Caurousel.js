@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import fast from '../assets/images/herobanner/fast.png';
-import kochi from '../assets/images/herobanner/kochi.png';
-import usa from '../assets/images/herobanner/usa.png';
+// import fast from '../assets/images/herobanner/fast.png';
+// import kochi from '../assets/images/herobanner/kochi.png';
+// import usa from '../assets/images/herobanner/usa.png';
+
+import fast from '../assets/images/herobanner/BG1.jpg';
+import kochi from '../assets/images/herobanner/BG2.jpg';
+import usa from '../assets/images/herobanner/BG3.jpg';
+
+
 
 
 function Caurousel() {
@@ -27,96 +33,78 @@ function Caurousel() {
 
 
     return (
-        <section id="page-title" className="page-title-dark page-title-center p-0 banner-area" >
+        <section id="page-title" className="page-title-dark page-title-center p-0 banner-area" style={{ marginTop: '-100px' }} >
             {/* <div className="content-wrap"> */}
             <div className="xcontainer clearfix">
-                <div className="row col-mb-50 mb-0 " >
+                <div className="row col-mb-50 mb-0 " style={{ paddingLeft: "0px !important" }}>
                     <div className="col-lg-5 col-sm-12 col-md-12 d-flex align-items-center flex-grow-1 carousel-text banner-text cpb-0">
                         <div className="fslider " data-arrows="false" data-pagi="false" data-animation="fade" data-hover="false">
                             <div className="flexslider ">
                                 <div className="slider-wrap ">
-                                    <div className="slide">
 
+                                    <div className="slide">
                                         <div className='color-primary-medium banner_font'>
                                             Direct Groupage
                                         </div>
-                                        <div className='color-secondary banner_font'
-                                        // style={{ whiteSpace: 'nowrap' }}
-                                        >
+                                        <div className='color-secondary banner_font ' >
                                             To Europe, Usa, Canada
                                         </div>
-
-                                        <div className='color-primary-medium '>
-                                            Now send your goods to and from hassle free at best rates
+                                        <div className='color-primary-medium mt-4 banner_font_medium'>
+                                            Now send your goods to and from
                                         </div>
-
-                                        <Link to="/contact-us" className='btn-contact-us btnprimary '>
+                                        <div className='color-primary-medium  banner_font_medium'>
+                                            hassle free at best rates
+                                        </div>
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary mt-4'>
                                             <span>
                                                 Contact Us
                                             </span>
-
                                         </Link>
-                                        {/* <button className='btn btnprimary mt-1'>
-                                            <Link to="/contact-us">
-                                                Conbact Us
-                                            </Link>
-                                        </button> */}
-
                                     </div>
+
                                     <div className="slide">
-                                        <div className='color-primary-medium banner_font'
-                                        // style={{ whiteSpace: 'nowrap' }}
-                                        >
+                                        <div className='color-primary-medium banner_font'>
                                             We Make Moving
                                         </div>
-                                        <div className='color-secondary banner_font'
-                                        // style={{ whiteSpace: 'nowrap' }}
-                                        >
+                                        <div className='color-secondary banner_font' >
                                             Fast & Easy
                                         </div>
-
-                                        <div className='color-primary-medium '>
+                                        <div className='color-primary-medium mt-4 banner_font_medium'>
                                             Personal and Commercial Relocation Services
                                         </div>
-                                        {/* <button className='btn btnprimary  mt-1'>
-                                            Conbact Us
-                                        </button> */}
-                                        <Link to="/contact-us" className='btn-contact-us btnprimary'>
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary mt-4'>
                                             <span>
                                                 Contact Us
                                             </span>
-
                                         </Link>
-
                                     </div>
+
+
                                     <div className="slide">
-                                        <div className='color-primary-medium banner_font'
-                                        // style={{ whiteSpace: 'nowrap' }}
-                                        >
+                                        <div className='color-primary-medium banner_font' style={{ whiteSpace: 'nowrap', }}>
                                             Groupage Services to
                                         </div>
                                         <div className='color-secondary banner_font' style={{ whiteSpace: 'nowrap', }}>
-                                            Hyderabad, Kochi &  Chennai                                        </div>
-                                        <div className='color-primary-medium '>
-                                            Providing customized and affordable Groupage Services to South India
+                                            Hyderabad, Kochi &  Chennai
                                         </div>
-
-                                        {/* <button className='btn btnprimary mt-1'>
-                                            Conbact Us
-                                        </button> */}
-
-                                        <Link to="/contact-us" className='btn-contact-us btnprimary'>
+                                        <div className='color-primary-medium mt-4 banner_font_medium'>
+                                            Providing customized and affordable
+                                            <br />
+                                            Groupage Services to South India
+                                        </div>
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary mt-4'>
                                             <span>
                                                 Contact Us
                                             </span>
 
                                         </Link>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-7 col-sm-12 col-md-12 flex-grow-1 carousel-image  cpb-0" >
+                    <div className="col-lg-7 col-sm-12 col-md-12 flex-grow-1 carousel-image  cpb-0"  >
                         <div className="fslider" data-arrows="false" data-pagi="false" data-animation="fade" data-hover="false">
                             <div className="flexslider" style={{ overflow: "hidden" }}>
                                 <div className="slider-wrap">

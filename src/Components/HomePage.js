@@ -48,12 +48,15 @@ function HomePage() {
                                 color: 'white',
                                 zIndex: '10000',
                             }} >
-                                <div className='col-sm-6 col-lg-8 home-contact contact-details' style={{ height: 'auto', margin: '0px -14px 6px -24px;', }} >
+                                <div className='col-sm-6 col-lg-8 home-contact contact-details' style={{
+                                    height: 'auto',
+                                    margin: '0px -14px 6px -24px;',
+                                }} >
                                     <div
                                         style={{
                                             display: 'flex',
                                             backgroundColor: 'red',
-                                            margin: '-12px',
+                                            // margin: '-12px',
                                             height: "80px",
                                             width: '400px',
                                         }}
@@ -138,8 +141,10 @@ function HomePage() {
                 <QuestionBanner />
                 {/* <RibbonBannerMembership /> */}
                 {/* <RibbonBanner /> */}
-                <Services type="" name="Our Services" see_all_btn={false} />
+                <Services type="" name="Our Services" see_all_btn={true} />
+
                 <RibbonBannerMembership />
+                <div style={{ height: '100px' }} />
                 <Services type="customer" name="Customer Feedback" see_all_btn={false} />
                 <FooterBanner />
                 <Footer />

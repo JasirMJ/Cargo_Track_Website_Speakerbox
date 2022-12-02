@@ -28,13 +28,11 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <div className='banner_font color-secondary'>The Best <span className='banner_font  color-primary-medium'> Moving </span> </div>
                         <div className='banner_font color-secondary'>Company in the </div>
                         <div className='banner_font color-primary-medium'>Kingdom</div>
-                        <div className='color-primary-medium' style={{ maxWidth: '280px', fontWeight: "500" }}>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
-                        {/* <button className='btn btnprimary  mt-1'>Contact Us</button> */}
-                        <Link to="/contact-us" className='btn-contact-us  btnprimary'>
+                        <div className='color-primary-medium banner_font_medium mt-4' style={{ maxWidth: '280px', }}>Connecting international boundaries for door to door cargo services from Saudi Arabia</div>
+                        <Link to="/contact-us" className='btn-contact-us  btnprimary mt-4'>
                             <span>
                                 Contact Us
                             </span>
-
                         </Link>
                     </>}
 

@@ -20,9 +20,9 @@ function RibbonBanner() {
                                 style={{
                                     fontSize: '39px',
                                 }} >
-                                <span className='color-secondary'>Our Membership &</span>
+                                <span className='color-secondary banner_font'>Our Memberships &</span>
                                 <br />
-                                <span className='color-primary'>Affliations</span>
+                                <span className='color-primary banner_font'>Affliations</span>
 
                             </div>
 

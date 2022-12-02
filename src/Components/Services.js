@@ -82,10 +82,10 @@ function Services({ type, name, see_all_btn }) {
                         // flexDirection: 'column',
                     }}
                 >
-                    <h1>
-                        <img src={icon} height="50" style={{ marginRight: '10px' }} />
+                    <span className='banner_font'>
+                        <img src={icon} height="45" style={{ marginRight: '20px' }} />
                         {name}
-                    </h1>
+                    </span>
                     {see_all_btn && <button className="btn-see-all ">See all </button>}
 
                 </div>
@@ -145,11 +145,11 @@ const ServiceCard = ({ service }) => {
 
 
 const CustomerFeedback = ({ item }) => {
-    return (<div className="col-sm-6 col-lg-4 " >
-        <div className="team service-card bg-primary-light customer-feedback " style={{ height: 'auto' }} >
-            {/* <div className="team-image">
-                <img src="demos/medical/images/doctors/1.jpg" className='service-card ' style={{ height: '300px' }} alt="Dr. John Doe" />
-            </div> */}
+    return (<div className="col-sm-6 col-lg-4 d-flex justify-content-center" >
+        <div className="team service-card bg-primary-light customer-feedback " style={{
+            maxWidth: '300px',
+            minHeight: '280px'
+        }} >
             <div className="xteam-desc ">
                 <div className="xteam-title p-3 " >
                     <div style={{ display: 'flex' }}>
@@ -161,9 +161,7 @@ const CustomerFeedback = ({ item }) => {
                                 flex: 1,
                                 justifyContent: 'center',
                                 flexDirection: 'column',
-                                // backgroundColor: "green",
                                 alignItems: "flex-start",
-
                             }}
                         >
                             <div className='customer-feedback-heading'>{item.name}</div>
@@ -171,10 +169,8 @@ const CustomerFeedback = ({ item }) => {
                         </div>
                     </div>
                     <div style={{ marginTop: '5px' }}>
-                        <span className='customer-feedback-desc ' >{item.comments}</span>
+                        <span className='xcustomer-feedback-desc banner_font_small ' >{item.comments}</span>
                     </div>
-
-
                 </div>
             </div>
         </div>
