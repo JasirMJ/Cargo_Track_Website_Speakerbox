@@ -120,19 +120,19 @@ export default Services
 
 const ServiceCard = ({ service }) => {
 
-    return (<div className="col-sm-6 col-lg-4 " style={{
+    return (<div className="col-sm-6 col-lg-4 d-flex justify-content-center" style={{
         // width: "300px",
         padding: "0px 30px 30px 30px",
     }}>
-        <div className="xteam service-card bg-primary-light" style={{ height: '450px' }} >
+        <div className="xteam service-card bg-primary-light" style={{ height: 'auto', maxWidth: '300px' }} >
             <div className="team-image">
-                <img src={service.image} className='service-card ' style={{ height: '260px' }} alt="image" />
+                <img src={service.image} className='service-card ' style={{ height: '200px' }} alt="image" />
             </div>
             <div className="team-desc ">
                 <div className="xteam-title p-4" >
                     <span className='service-heading'>{service.heading}</span>
                     <br />
-                    <span className='service-desc' >
+                    <span className='service-desc ' >
                         {service.description}
                     </span>
                 </div>

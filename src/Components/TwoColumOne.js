@@ -45,9 +45,9 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <div className='banner_font  color-primary-medium'>{heading01} </div>
                         <div className='banner_font color-secondary'>{heading02}</div>
                         <div className='banner_font color-primary-medium'></div>
-                        <div className='color-primary-medium'>{desc}</div>
+                        <div className='color-primary-medium banner_font_medium mt-4 '>{desc}</div>
                         {button &&
-                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                            <button className='btn btnprimary  mt-4'>{button.text}</button>
                         }
                         <Contactform />
                     </>}
@@ -57,9 +57,9 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <div className='banner_font  color-primary-medium'>{heading01} </div>
                         <div className='banner_font color-secondary'>{heading02}</div>
                         <div className='banner_font color-primary-medium'></div>
-                        <div className='color-primary-medium'>{desc}</div>
+                        <div className='color-primary-medium banner_font_medium mt-4 '>{desc}</div>
                         {button &&
-                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                            <button className='btn btnprimary  mt-4'>{button.text}</button>
                         }
                     </>}
                     {page === 'about' && <>
@@ -67,9 +67,9 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <div className='banner_font  color-primary-medium'>{heading01} </div>
                         <div className='banner_font color-secondary'>{heading02}</div>
                         <div className='banner_font color-primary-medium'></div>
-                        <div className='color-primary-medium'>{desc}</div>
+                        <div className='color-primary-medium banner_font_medium mt-4 '>{desc}</div>
                         {button &&
-                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                            <button className='btn btnprimary  mt-4'>{button.text}</button>
                         }
                     </>}
                     {page === 'services' && <>
@@ -77,9 +77,9 @@ function TwoColumOne({ page, heading01, heading02, desc, button }) {
                         <div className='banner_font  color-primary-medium'>{heading01} </div>
                         <div className='banner_font color-secondary'>{heading02}</div>
                         <div className='banner_font color-primary-medium'></div>
-                        <div className='color-primary-medium'>{desc}</div>
+                        <div className='color-primary-medium banner_font_medium mt-4 '>{desc}</div>
                         {button &&
-                            <button className='btn btnprimary  mt-1'>{button.text}</button>
+                            <button className='btn btnprimary  mt-4'>{button.text}</button>
                         }
                     </>}
 
@@ -329,3 +329,80 @@ function Contactform() {
         </div>
     )
 }
+
+// import icon_arrow from '../assets/images/icons/Arrow 1.png'
+
+/*
+
+.service-desc {
+    font-size: 16px;
+    color: var(--primary-color-medium);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+.service-card-name {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+*/
+// const ServiceCardInside = ({ service }) => {
+
+//     return (<div className="col-sm-6 col-lg-4" style={{
+//         padding: "0px 30px 30px 30px",
+//         height: '420px',
+//     }}
+
+
+//     >
+//         <div className="xteam service-card  d-flex align-items-center">
+//             <div className="team-image"
+
+//                 style={{ position: 'relative' }}
+
+//             >
+//                 <span
+//                     style={{
+//                         backgroundImage: 'linear-gradient(to bottom,rgb(1, 43, 57,0),  rgb(1, 43, 57,1))',
+//                         height: '100%',
+//                         width: '100%',
+//                         position: 'absolute',
+//                         borderRadius: '10px',
+//                     }}
+//                 ></span>
+//                 <img src={service.image} className='service-card ' style={{ height: '400px' }} alt="image" />
+//                 <div
+//                     className='d-flex justify-content-between align-items-end'
+//                     style={{
+//                         height: "80px",
+//                         width: "100%",
+//                         paddingLeft: '20px',
+//                         paddingRight: '20px',
+
+
+//                         position: 'absolute',
+//                         color: 'white',
+//                         bottom: '20px',
+
+//                     }}
+//                 >
+//                     <span className='service-card-name' style={{
+//                         maxWidth: '240px',
+//                     }}>{service.heading}</span>
+//                     <button className='btn btnprimary '
+//                         style={{
+//                             height: '50px',
+//                             marginBottom: '-10px',
+//                         }}
+//                     >
+//                         <img src={icon_arrow} height="20" />
+//                     </button>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+//     )
+// }

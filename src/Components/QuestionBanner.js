@@ -10,7 +10,6 @@ function QuestionBanner() {
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    // backgroundColor: 'red'
                     marginBottom: '5%',
                     marginTop: '5%',
 
@@ -22,13 +21,11 @@ function QuestionBanner() {
                         backgroundImage:
                             `url("${bgimg}")`,
                     }}
-
                 >
-                    {/* <img src={bgimg} /> */}
 
                     <div className='heading-small'>Are you considering a </div>
                     <div className='heading-small'>relocation to Saudi Arabia</div>
-                    <div className='normal-text-large'>Get in touch with us for assistance</div>
+                    <div className='normal-text-large mt-3'>Get in touch with us for assistance</div>
                     <a className='btn btnprimary  mt-3' href='/country-guide'>Country Guide</a>
                 </div>
 
