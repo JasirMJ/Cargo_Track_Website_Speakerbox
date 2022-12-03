@@ -80,7 +80,7 @@
 }
 
 .service-card {
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .txt-field {
@@ -101,9 +101,15 @@
 
 
 .service-desc {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--primary-color-medium);
+    letter-spacing: 1px;
     font-weight: 500;
+}
+
+.service-card-name {
+    font-size: 22px;
+    font-weight: normal;
 }
 
 .service-heading {

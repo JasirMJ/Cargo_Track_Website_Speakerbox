@@ -141,7 +141,7 @@ function HomePage() {
                 <QuestionBanner />
                 {/* <RibbonBannerMembership /> */}
                 {/* <RibbonBanner /> */}
-                <Services type="" name="Our Services" see_all_btn={true} />
+                <Services type="" name="Our Services" see_all_btn={true} page={"home"} />
 
                 <RibbonBannerMembership />
                 <div style={{ height: '100px' }} />

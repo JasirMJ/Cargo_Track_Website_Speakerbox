@@ -12,13 +12,14 @@ import Gallery from './Pages/Gallery';
 import GetAQuote from './Pages/GetAQuote';
 import ContactUs from './Pages/ContactUs';
 import CountryGuide from './Pages/CountryGuide';
-import Service from './Components/Service';
+import Service from './Components/SingleService';
 
 function App() {
     return (
         <Router>
             <Routes>
                 {/* <Route exact path="/medicine/:id" element={<MedicinePage />} /> */}
+                <Route exact path="/service" element={<Service />} />
                 <Route exact path="/service/:id" element={<Service />} />
                 <Route exact path="/country-guide" element={<CountryGuide />} />
                 <Route exact path="/contact-us" element={<ContactUs />} />
