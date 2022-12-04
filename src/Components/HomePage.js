@@ -99,27 +99,27 @@ function HomePage() {
 
                                     <div className="input-group mb-2  mt-1">
 
-                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                        <input type="text" className="form-control" placeholder="Moving from" aria-label="moving-from" aria-describedby="basic-addon1" />
                                     </div>
                                     <div className="input-group mb-2">
 
-                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                        <input type="text" className="form-control" placeholder="Moving to" aria-label="Username" aria-describedby="basic-addon1" />
                                     </div>
 
 
                                     <div className="input-group mb-2">
-                                        <input type="text" className="form-control " style={{ marginRight: '5px', borderRadius: '5px' }} placeholder="Username" aria-label="Username" />
+                                        <input type="text" className="form-control " style={{ marginRight: '5px', borderRadius: '5px' }} placeholder="Moving date" aria-label="Username" />
 
-                                        <input type="text" className="form-control" style={{ marginLeft: '5px', borderRadius: '5px' }} placeholder="Server" aria-label="Server" />
+                                        <input type="text" className="form-control" style={{ marginLeft: '5px', borderRadius: '5px' }} placeholder="Name" aria-label="Server" />
                                     </div>
 
                                     <div className="input-group mb-2">
 
-                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                                        <input type="text" className="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1" />
                                     </div>
 
                                     <div className="input-group mb-2">
-                                        <input type="text" className="form-control" placeholder="Username" aria-label="Username" style={{ marginRight: '5px', borderRadius: '5px' }} />
+                                        <input type="text" className="form-control" placeholder="Mobile No" aria-label="Mobile No" style={{ marginRight: '5px', borderRadius: '5px' }} />
 
                                         {/* <input type="text" className="form-control" placeholder="Server" aria-label="Server" /> */}
                                         <Link to='/get-quote' className='btn btnprimary'

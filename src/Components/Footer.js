@@ -1,6 +1,12 @@
 import React from 'react'
 import logo from "../assets/images/logo/logo-white.png";
 
+import fb from "../assets/images/icons/fb965.png";
+import insta from "../assets/images/icons/insta964.png";
+import utube from "../assets/images/icons/utub963.png";
+import whatsapp from "../assets/images/icons/whatsapp966.png";
+import linkedin from "../assets/images/icons/ln962.png";
+
 
 function Footer() {
     return (
@@ -24,14 +30,38 @@ function Footer() {
                             </div>
                             <div className="widget subscribe-widget clearfix">
                                 <div className="row col-mb-30">
-                                    <div className="col-sm-6 col-md-12 col-lg-6 clearfix">
+                                    <div className="col-sm-12 col-md-12 col-lg-12 clearfix">
                                         <p href="#">
                                             <small style={{ display: 'block', marginTop: 3 }}>
                                                 <strong>Jeddah | Riyadh | Dammam
-                                                </strong><br />
-                                                Download e-brochure
-                                                <br />
-                                                Connect with us :
+                                                </strong>
+                                                {/* <br /> */}
+
+                                                <div className='d-flex justify-content-start align-items-md-center '>
+                                                    Connect with us :
+                                                    <a href='#' >
+                                                        <img src={fb} height="30" className='p-1 footer_social_icons' />
+
+                                                    </a>
+                                                    <a href='#' >
+                                                        <img src={insta} height="30" className='p-1 footer_social_icons' />
+
+                                                    </a>
+                                                    <a href='#' >
+                                                        <img src={utube} height="30" className='p-1 footer_social_icons' />
+
+                                                    </a>
+                                                    <a href='#' >
+                                                        <img src={whatsapp} height="30" className='p-1 footer_social_icons' />
+
+                                                    </a>
+                                                    <a href='#' >
+                                                        <img src={linkedin} height="30" className='p-1 footer_social_icons' />
+
+                                                    </a>
+
+                                                </div>
+
                                             </small></p>
                                     </div>
                                 </div>
@@ -44,25 +74,25 @@ function Footer() {
                                 <div className="row col-mb-30">
                                     <div className="col-lg-3 col-6 xwidget_links">
                                         <h5 className='clr-white'>SITEMAP</h5>
-                                        <div>Home</div>
-                                        <div>About</div>
-                                        <div>Services</div>
-                                        <div>Gallery</div>
+                                        <div className='footer_text'>Home</div>
+                                        <div className='footer_text'>About</div>
+                                        <div className='footer_text'>Services</div>
+                                        <div className='footer_text'>Gallery</div>
                                     </div>
                                     <div className="col-lg-4 col-6 xwidget_links">
                                         <h5 className='clr-white'>QUICK START</h5>
-                                        <div>Get a Quote</div>
-                                        <div>Track Shipment</div>
-                                        <div>Customer feedback</div>
-                                        <div>Contact Us</div>
+                                        <div className='footer_text'>Get a Quote</div>
+                                        <div className='footer_text'>Track Shipment</div>
+                                        <div className='footer_text'>Customer feedback</div>
+                                        <div className='footer_text'>Contact Us</div>
                                     </div>
                                     <div className="col-lg-5 col-6 xwidget_links">
                                         <h5 className='clr-white'>SERVICES</h5>
-                                        <div>Household Goods Relocation</div>
-                                        <div>Road Transportations</div>
-                                        <div>Vehicle Relocation</div>
-                                        <div>Storage Services</div>
-                                        <div>Mobility Services</div>
+                                        <div className='footer_text'>Household Goods Relocation</div>
+                                        <div className='footer_text'>Road Transportations</div>
+                                        <div className='footer_text'>Vehicle Relocation</div>
+                                        <div className='footer_text'>Storage Services</div>
+                                        <div className='footer_text'>Mobility Services</div>
                                     </div>
 
                                 </div>

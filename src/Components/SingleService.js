@@ -178,10 +178,11 @@ function SingleService({ type, name, see_all_btn }) {
                             <div className="col-lg-12"
                                 style={{
 
-                                    display: 'flex',
+                                    // display: 'flex',
                                     // flexDirection: 'column',
                                     alignItems: 'center',
-                                    justifyContent: 'center'
+                                    justifyContent: 'center',
+                                    padding: "6%",
 
                                 }}
                             >

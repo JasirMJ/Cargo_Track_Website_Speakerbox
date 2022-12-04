@@ -3,13 +3,29 @@ import p1 from '../assets/profile/Rectangle 171.png'
 import p2 from '../assets/profile/Rectangle 171-1.png'
 import p3 from '../assets/profile/Rectangle 171-2.png'
 import household from '../assets/images/services/Rectangle 172-4.png'
+import household2 from '../assets/images/services/Rectangle 176-7.png'
+
 import office_relocation from '../assets/images/services/Rectangle 172-2.png'
+import office_relocation2 from '../assets/images/services/Group 861.png'
+
 import mobility_service from '../assets/images/services/Rectangle 172-3.png'
+import mobility_service2 from '../assets/images/services/Rectangle 176.png'
+
 import road_transportation from '../assets/images/services/Rectangle 173.png'
+import road_transportation2 from '../assets/images/services/Rectangle 176-4.png'
+
 import packing_and_crafting from '../assets/images/services/Rectangle 172.png'
+import packing_and_crafting2 from '../assets/images/services/Rectangle 176-1.png'
+
 import groupage_services from '../assets/images/services/Rectangle 172-1.png'
+import groupage_services2 from '../assets/images/services/Rectangle 176-6.png'
+
 import storage_services from '../assets/images/services/Rectangle 176-3.png'
+import storage_services2 from '../assets/images/services/Rectangle 176-3.png'
+
 import vehicle_services from '../assets/images/services/Rectangle 176-5.png'
+import vehicle_services2 from '../assets/images/services/Rectangle 176-5.png'
+
 import icon from '../assets/images/icons/Group.png'
 import icon_arrow from '../assets/images/icons/Arrow 1.png'
 import { Link } from 'react-router-dom'
@@ -20,6 +36,7 @@ function Services({ type, name, see_all_btn, page }) {
         {
             "id": 1,
             "image": household,
+            "image2": household2,
             "heading": "Household Goods Relocation",
             "description": "Undertaking household goods relocation to make easy and convenient moving."
         },
@@ -27,42 +44,49 @@ function Services({ type, name, see_all_btn, page }) {
         {
             "id": 2,
             "image": office_relocation,
+            "image2": office_relocation2,
             "heading": "Office Relocation & Data Centre Migration ",
             "description": "Planning and relocating offices with our skilled movers and packers."
         },
         {
             "id": 3,
             "image": mobility_service,
+            "image2": mobility_service2,
             "heading": "Mobility Services",
             "description": "Assisting companies to handle the complex tax, planning, operational, and strategic aspects in all levels."
         },
         {
             "id": 4,
             "image": road_transportation,
+            "image2": road_transportation2,
             "heading": "Road Transportation",
             "description": "we handle both standard and heavylift transport We provide is a variety of solutions to meet the demand of customer."
         },
         {
             "id": 5,
             "image": packing_and_crafting,
+            "image2": packing_and_crafting2,
             "heading": "Packing & Crating",
             "description": "We have a team of professional carpenters and expert packers."
         },
         {
             "id": 6,
             "image": groupage_services,
+            "image2": groupage_services2,
             "heading": "Groupage Services",
             "description": "We provide domestic and international transportation even for less volume load along with other shipments."
         },
         {
             "id": 7,
             "image": storage_services,
+            "image2": storage_services2,
             "heading": "Storage Services",
             "description": "We provide domestic and international transportation even for less volume load along with other shipments."
         },
         {
             "id": 8,
             "image": vehicle_services,
+            "image2": vehicle_services2,
             "heading": "Vehicle Relocations",
             "description": "We provide domestic and international transportation even for less volume load along with other shipments."
         },
@@ -109,7 +133,8 @@ function Services({ type, name, see_all_btn, page }) {
                         <img src={icon} height="45" style={{ marginRight: '20px' }} />
                         {name}
                     </span>
-                    {see_all_btn && <button className="btn-see-all ">See all </button>}
+
+                    {see_all_btn && <Link to={'/services'} className="btn btnprimary btn-see-all d-flex justify-content-center align-items-center  ">See all <img src={icon_arrow} style={{ height: '10px', marginLeft: '5px' }} /></Link>}
 
                 </div>
             </section>
@@ -185,7 +210,7 @@ const ServiceCardInside = ({ service, index }) => {
 
     return (<div className="col-sm-6 col-lg-4" style={{
         padding: "0px 30px 30px 30px",
-        height: '420px',
+        height: 'auto',
     }}
 
 
@@ -195,11 +220,11 @@ const ServiceCardInside = ({ service, index }) => {
 
                 style={{
                     position: 'relative',
-                    maxWidth: '330px',
+                    // maxWidth: '330px',
                 }}
 
             >
-                <span
+                {/* <span
                     style={{
                         backgroundImage: 'linear-gradient(to bottom,rgb(1, 43, 57,0),  rgb(1, 43, 57,1))',
                         height: '100%',
@@ -207,8 +232,12 @@ const ServiceCardInside = ({ service, index }) => {
                         position: 'absolute',
                         borderRadius: '30px',
                     }}
-                ></span>
-                <img src={service.image} className='service-card ' style={{ height: '400px' }} alt="image" />
+                ></span> */}
+                <img src={service.image2} className='service-card '
+                    style={{
+                        width: '100%',
+                    }}
+                    alt="image" />
                 <div
                     className='d-flex justify-content-between align-items-end'
                     style={{

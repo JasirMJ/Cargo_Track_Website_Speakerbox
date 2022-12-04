@@ -12,17 +12,21 @@ import FooterBanner from '../Components/FooterBanner'
 import ServiceList from '../Components/Services'
 
 import gallery1 from '../assets/images/gallery/servises page.png'
-import gallery2 from '../assets/images/gallery/Rectangle 174-1.png'
-import gallery3 from '../assets/images/gallery/Rectangle 174-2.png'
-import gallery4 from '../assets/images/gallery/Rectangle 176.png'
-import gallery5 from '../assets/images/gallery/Rectangle 177.png'
-import gallery6 from '../assets/images/gallery/Rectangle 178.png'
-import gallery7 from '../assets/images/gallery/Rectangle 177.png'
-import gallery8 from '../assets/images/gallery/Rectangle 179.png'
+import gallery2 from '../assets/images/gallery/1 (4).jpg'
+import gallery3 from '../assets/images/gallery/1 (5).jpg'
+import gallery4 from '../assets/images/gallery/1 (1).jpg'
+import gallery5 from '../assets/images/gallery/1 (2).jpg'
+import gallery6 from '../assets/images/gallery/Rectangle 174-1.png'
+import gallery7 from '../assets/images/gallery/1 (6).jpg'
+import gallery8 from '../assets/images/gallery/1 (3).jpg'
 import gallery9 from '../assets/images/gallery/Rectangle 174.png'
 
 
+const h1 = "600px"
+const w1 = "600px"
 
+const h2 = "290px"
+const w2 = "300px"
 
 function Gallery() {
     return (
@@ -61,40 +65,42 @@ const GalleryWeb = () => {
                 <div class="col-sm  d-flex justify-content-center align-items-center m-2 ">
                     <div style={{ height: "auto", }}>
                         {/* <img className='rounded' src="https://picsum.photos/400/600" alt="" /> */}
-                        <img className='rounded' src={"https://picsum.photos/400/600"} alt="" />
+                        <img className='rounded' src={gallery1} alt="" style={{ height: h1, width: w1 }} />
                     </div>
                 </div>
                 <div class="col-sm d-flex justify-content-between align-items-center flex-column m-2">
                     <div>
-                        <img className='rounded' src="https://picsum.photos/300/290" alt="" style={{}} />
+                        <img className='rounded' src={gallery2} style={{ height: h2, width: w2 }} alt="" />
+                        {/* <img className='rounded' src="https://picsum.photos/300/290" alt="" style={{}} /> */}
+
                     </div>
                     <div>
-                        <img className='rounded' src="https://picsum.photos/300/290" alt="" style={{}} />
+                        <img className='rounded' src={gallery3} alt="" style={{ height: h2, width: w2 }} />
                     </div>
                 </div>
                 <div class="col-sm  d-flex justify-content-center align-items-center m-2">
                     <div style={{ height: "auto", }}>
-                        <img className='rounded' src="https://picsum.photos/400/600" alt="" />
+                        <img className='rounded' src={gallery4} style={{ height: h1, width: w1 }} alt="" />
                     </div>
                 </div>
             </div>
             <div class="row" style={{ height: 'auto' }}>
                 <div class="col-sm  d-flex justify-content-center align-items-center m-2 ">
                     <div style={{ height: "auto", }}>
-                        <img className='rounded' src="https://picsum.photos/400/600" alt="" />
+                        <img className='rounded' src={gallery5} alt="" style={{ height: h1, width: w1 }} />
                     </div>
                 </div>
                 <div class="col-sm d-flex justify-content-between align-items-center flex-column m-2">
                     <div>
-                        <img className='rounded' src="https://picsum.photos/300/290" alt="" style={{}} />
+                        <img className='rounded' src={gallery6} alt="" style={{ height: h2, width: w2 }} />
                     </div>
                     <div>
-                        <img className='rounded' src="https://picsum.photos/300/290" alt="" style={{}} />
+                        <img className='rounded' src={gallery7} alt="" style={{ height: h2, width: w2 }} />
                     </div>
                 </div>
                 <div class="col-sm  d-flex justify-content-center align-items-center m-2">
                     <div style={{ height: "auto", }}>
-                        <img className='rounded' src="https://picsum.photos/400/600" alt="" />
+                        <img className='rounded' src={gallery8} alt="" style={{ height: h1, width: w1 }} />
                     </div>
                 </div>
             </div>

@@ -212,7 +212,7 @@ function Quoteform() {
 
     return (
         <div className="content-wrap" style={{ overflow: 'visible' }}>
-            <div className="container clearfix">
+            <div className="container clearfix d-flex justify-content-center">
                 <div className="row col-mb-50 mb-0 xbg-primary" style={{
                     // marginTop: '-364px',
                     color: 'white',
@@ -233,66 +233,75 @@ function Quoteform() {
                     >
                         <div class="form-heading">Personal Details</div>
 
-                        <div className="input-group mb-3  mt-2">
+                        <div className="input-group mb-2  mt-2">
                             <input type="text" className="form-control-1" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1" />
                         </div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2">
                             <input type="text" className="form-control-1" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1" />
                         </div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2">
                             <input type="text" className="form-control-1" placeholder="E-Mail" aria-label="E-Mail" aria-describedby="basic-addon1" />
                         </div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2">
                             <input type="text" className="form-control-1" placeholder="Mobile Number" aria-label="Mobile Number" aria-describedby="basic-addon1" />
                         </div>
-
+                        <hr />
+                        <hr />
+                        <hr />
 
 
                         <div class="form-heading">Moving From (Origin)</div>
 
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2 mt-2">
                             <input type="text" className="form-control-1 " placeholder="Country/Territory" aria-label="Country/Territory" />
                             <input type="text" className="form-control-1" placeholder="City/Town/Localityy" aria-label="City/Town/Locality" />
                         </div>
+                        <hr />
 
                         <div class="form-heading">Moving To (Destination)</div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2 mt-2">
                             <input type="text" className="form-control-1 " placeholder="Country/Territory" aria-label="Country/Territory" />
                             <input type="text" className="form-control-1" placeholder="City/Town/Locality" aria-label="City/Town/Locality" />
                         </div>
+                        <hr />
 
                         <div class="form-heading">Who is Moving </div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2 mt-2">
                             <input type="text" className="form-control-1 " placeholder="No.of Adults" aria-label="No.of Adults" />
                             <input type="text" className="form-control-1" placeholder="No.of Kids" aria-label="No.of Kids" />
                         </div>
+                        <hr />
 
 
                         <div class="form-heading">Why are you Moving </div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2 mt-2">
                             <input type="text" className="form-control-1 " placeholder="eg: Family Reasons" aria-label="eg: Family Reasons" />
                         </div>
+                        <hr />
 
                         <div class="form-heading">What are you Moving </div>
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2 mt-2">
                             <input type="text" className="form-control-1" placeholder="eg: 1-2 Bedroom Home" aria-label="eg: 1-2 Bedroom Home" />
                         </div>
+                        <hr />
 
 
 
                         <div class="form-heading">Pick up Date </div>
-                        <div className="input-group mb-3  mt-2">
+                        <div className="input-group mb-2  mt-2 ">
                             <input type="text" className="form-control-1" placeholder="Pick a Date" aria-label="Pick a Date" aria-describedby="basic-addon1" />
                         </div>
+                        <hr />
 
                         <div class="form-heading">Convenient time to call back?</div>
-                        <div className="input-group mb-3  mt-2">
+                        <div className="input-group mb-2  mt-2">
                             <input type="text" className="form-control-1" placeholder="Select a time slot " aria-label="Select a time slot " aria-describedby="basic-addon1" />
                         </div>
+                        <hr />
 
-                        <div className="input-group mb-3">
+                        <div className="input-group mb-2">
                             <button className='btn btnprimary'
-                                style={{ width: '50%', height: "40px", marginLeft: '5px', borderRadius: '5px' }}
+
                             >Get a Quote</button>
                         </div>
                     </div>

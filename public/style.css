@@ -188,6 +188,7 @@
     line-height: 30px;
 }
 
+
 .footer_banner_font_medium {
     font-size: 15px;
     font-weight: 500;
@@ -196,12 +197,22 @@
     /* line-height: 30px; */
 }
 
+.footer_text {
+    font-size: 15px;
+    /* font-weight: 500; */
+    line-height: 30px;
+}
+
+.footer_social_icons {
+    cursor: pointer;
+}
+
 
 
 
 
 .btn-see-all {
-    background-color: var(--primary-color) !important;
+    /* background-color: var(--primary-color) !important; */
     color: #fff;
     border-radius: 10px;
     width: 120px;
