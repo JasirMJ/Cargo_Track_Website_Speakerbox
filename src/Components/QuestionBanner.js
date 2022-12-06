@@ -23,7 +23,7 @@ function QuestionBanner() {
                     }}
                 >
 
-                    <div className='heading-small'>Are you considering a </div>
+                    <div className='heading-small banner_font'>Are you considering a </div>
                     <div className='heading-small'>relocation to Saudi Arabia</div>
                     <div className='normal-text-large mt-3'>Get in touch with us for assistance</div>
                     <a className='btn btnprimary  mt-3' href='/country-guide'>Country Guide</a>

@@ -42,7 +42,7 @@ function HomePage() {
                 <Caurousel />
                 <section id="content">
                     <div className="content-wrap" style={{ overflow: 'visible' }}>
-                        <div className="container clearfix">
+                        <div className="container clearfix quote-box" >
                             <div className="row col-mb-50 mb-0 xbg-primary" style={{
                                 marginTop: '-380px',
                                 color: 'white',

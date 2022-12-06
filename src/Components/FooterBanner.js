@@ -15,7 +15,7 @@ function FooterBanner() {
                         <div className='footer-banner-text'>
                             <div className='footer_banner_font colorwhite'>Do you have a requirement ?</div>
                             <div className='xcolor-primary-medium  footer_banner_font_medium mt-3'>We provide better freight & service in the <br />kingodom of Saudi Arabia with our expertise</div>
-                            <button className='btn btnprimary mt-3' placeholder=''
+                            <button className='btn btnprimary mt-3 img-footer' placeholder=''
                                 style={{ width: 'auto', height: "35px", borderRadius: '5px' }}
                             >Get a Quote</button>
                         </div>

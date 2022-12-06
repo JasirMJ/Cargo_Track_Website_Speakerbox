@@ -112,12 +112,50 @@
     border-color: rgba(255, 255, 255, .15);
 }
 
+.banner-area {
+    margin-top: -100px;
+}
+
+.img_footer {
+    width: auto;
+    height: 15px;
+    object-fit: cover;
+}
+
 /* css when device smaller than 400px width */
 @media (max-width: 400px) {
     html {
         font-size: 14px;
 
 
+    }
+
+    .content-wrap {
+        padding: 0px !important;
+    }
+
+    .rev-direction {
+        display: flex;
+        flex-direction: column-reverse;
+
+        /* flex-direction: column-reverse; */
+        /* justify-content: center;
+        align-items: center; */
+
+    }
+
+    .quote-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding: 0px !important; */
+    }
+
+    .quote-box,
+    .row {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
     }
 
     .carousel-text {
@@ -134,6 +172,7 @@
     }
 
     .banner_font {
+        line-height: 1.2;
         font-size: 25px;
         font-weight: 600;
     }
@@ -143,12 +182,22 @@
         height: 20vh !important;
     }
 
+    .footer_banner_font {
+        font-size: 15px;
+        line-height: 1.1;
+    }
+
+    .footer_banner_font_medium {
+        display: none;
+    }
+
     .cpb-0 {
         padding-bottom: 0px !important;
     }
 
     .banner-area {
         height: 90vh;
+        margin-top: 0px;
     }
 
     .contact-details {
@@ -156,9 +205,9 @@
     }
 
     .footer-banner-img {
-        width: 230px;
+        width: 180px;
         position: absolute;
-        right: -55px;
+        right: -25px;
         bottom: 0px;
     }
 
@@ -175,10 +224,12 @@
 
     .footer-banner-desc {
         display: none;
+        width: 80%;
     }
 
     .footer-banner {
         height: 120px;
+        width: 80%;
     }
 
     .whatsapp-icon {

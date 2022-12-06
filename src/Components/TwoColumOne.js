@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 function TwoColumOne({ page, heading01, heading02, desc, button }) {
     return (
 
-        <div className="xsection row p-0 align-items-stretch dark topmargin-sm"
+        <div className="xsection row p-0 align-items-stretch dark topmargin-sm rev-direction"
             style={{
                 height: 'auto',
                 marginBottom: '5%',

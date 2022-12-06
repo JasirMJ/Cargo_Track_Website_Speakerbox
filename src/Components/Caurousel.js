@@ -33,7 +33,7 @@ function Caurousel() {
 
 
     return (
-        <section id="page-title" className="page-title-dark page-title-center p-0 banner-area" style={{ marginTop: '-100px' }} >
+        <section id="page-title" className="page-title-dark page-title-center p-0 banner-area" >
             {/* <div className="content-wrap"> */}
             <div className="xcontainer clearfix">
                 <div className="row col-mb-50 mb-0 " style={{ paddingLeft: "0px !important" }}>
@@ -41,6 +41,28 @@ function Caurousel() {
                         <div className="fslider " data-arrows="false" data-pagi="false" data-animation="fade" data-hover="false">
                             <div className="flexslider ">
                                 <div className="slider-wrap ">
+
+                                    <div className="slide">
+                                        <div className='color-primary-medium banner_font'>
+                                            We Make Moving
+                                        </div>
+                                        <div className='color-secondary banner_font' >
+                                            Fast & Easy
+                                        </div>
+                                        <div className='color-primary-medium mt-4 banner_font_medium'>
+                                            Personal and Commercial
+                                        </div>
+                                        <div className='color-primary-medium  banner_font_medium'>
+                                            Relocation Services
+                                        </div>
+
+
+                                        <Link to="/contact-us" className='btn-contact-us btnprimary mt-4'>
+                                            <span>
+                                                Contact Us
+                                            </span>
+                                        </Link>
+                                    </div>
 
                                     <div className="slide">
                                         <div className='color-primary-medium banner_font'>
@@ -54,23 +76,6 @@ function Caurousel() {
                                         </div>
                                         <div className='color-primary-medium  banner_font_medium'>
                                             hassle free at best rates
-                                        </div>
-                                        <Link to="/contact-us" className='btn-contact-us btnprimary mt-4'>
-                                            <span>
-                                                Contact Us
-                                            </span>
-                                        </Link>
-                                    </div>
-
-                                    <div className="slide">
-                                        <div className='color-primary-medium banner_font'>
-                                            We Make Moving
-                                        </div>
-                                        <div className='color-secondary banner_font' >
-                                            Fast & Easy
-                                        </div>
-                                        <div className='color-primary-medium mt-4 banner_font_medium'>
-                                            Personal and Commercial Relocation Services
                                         </div>
                                         <Link to="/contact-us" className='btn-contact-us btnprimary mt-4'>
                                             <span>
