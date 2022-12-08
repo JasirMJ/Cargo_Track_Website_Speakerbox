@@ -18,7 +18,6 @@ function App() {
     return (
         <Router>
             <Routes>
-                {/* <Route exact path="/medicine/:id" element={<MedicinePage />} /> */}
                 <Route exact path="/service" element={<Service />} />
                 <Route exact path="/service/:id" element={<Service />} />
                 <Route exact path="/country-guide" element={<CountryGuide />} />
@@ -29,7 +28,6 @@ function App() {
                 <Route exact path="/about" element={<About />} />
                 <Route exact path="/home" element={<HomePage />} />
                 <Route exact path="/" element={<HomePage />} />
-                {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
         </Router>
 
